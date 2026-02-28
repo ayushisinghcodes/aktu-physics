@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKTU Engineering Physics | Unit 3 - Wave Optics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="description"
+        content="Detailed guide on Wave Optics for AKTU Engineering Physics. Explores interference, Newton's rings, and diffraction.">
+
+    <!-- MathJax for Mathematical Derivations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fa-solid fa-atom"></i>
+                AKTU<span>Physics</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#units">Back to Units</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header style="padding-bottom: 2rem;">
+            <span class="unit-number" style="font-size: 1rem;">Unit III</span>
+            <h1>Wave Optics</h1>
+            <p class="subtitle" style="margin-top: 1rem;">Studying the behavior of light as a wave. Understand the
+                principles of superposition, interference patterns, and diffraction phenomena.</p>
+        </header>
+
+        <main>
+            <!-- Section 1: Interference in Thin Films -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-theory">Theoretical Framework</span>
+                <span class="section-tag tag-math">Mathematical Derivations</span>
+                <h2>1. Interference in Thin Films</h2>
+                <p>When light strikes a very thin transparent film (like a soap bubble or oil slick), it undergoes
+                    partial reflection and partial transmission at the top and bottom surfaces. These reflected and
+                    transmitted waves superimpose to produce interference patterns.</p>
+
+                <h3>Path Difference in Reflected Light</h3>
+                <p>For a film of thickness \( t \) and refractive index \( \mu \), light reflected from the lower
+                    surface travels an extra path inside the film. In addition, there is an abrupt phase change of \(
+                    \pi \) (equivalent to a path change of \( \lambda/2 \)) when reflection occurs from a denser medium.
+                </p>
+
+                <div class="math-block">
+                    <p>The effective path difference \( \Delta x \) is:</p>
+                    $$ \Delta x = 2 \mu t \cos r \pm \frac{\lambda}{2} $$
+                    <p>Where \( r \) is the angle of refraction inside the film.</p>
+                </div>
+
+                <h3>Condition for Maxima (Constructive Interference / Bright Fringe)</h3>
+                <div class="math-block">
+                    $$ 2 \mu t \cos r \pm \frac{\lambda}{2} = n\lambda \implies 2 \mu t \cos r = (2n -
+                    1)\frac{\lambda}{2} $$
+                    <p>\( n = 1, 2, 3, \dots \)</p>
+                </div>
+
+                <h3>Condition for Minima (Destructive Interference / Dark Fringe)</h3>
+                <div class="math-block">
+                    $$ 2 \mu t \cos r \pm \frac{\lambda}{2} = (2n - 1)\frac{\lambda}{2} \implies 2 \mu t \cos r =
+                    n\lambda $$
+                    <p>\( n = 0, 1, 2, \dots \)</p>
+                </div>
+            </section>
+
+            <!-- Section 2: Newton's Rings -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-theory">Theoretical Framework</span>
+                <span class="section-tag tag-math">Mathematical Derivations</span>
+                <h2>2. Newton's Rings</h2>
+                <p>Newton's rings are formed due to interference between light waves reflected from the top and bottom
+                    surfaces of the air film bounded between an plano-convex lens and a plane glass plate.</p>
+
+                <h3>Diameter of Rings</h3>
+                <p>Let \( R \) be the radius of curvature of the plano-convex lens and \( r_n \) be the radius of the
+                    \(n\)-th ring.</p>
+                <p>The thickness \( t \) of the air film at a distance \( r_n \) from the center is given by \( t =
+                    \frac{r_n^2}{2R} \).</p>
+                <p>For normal incidence, \( r = 0 \) and \( \cos r = 1 \). For an air film, \( \mu = 1 \).</p>
+
+                <div class="math-block">
+                    <p><strong>Diameter of \(n\)-th dark ring (\( D_n = 2 r_n \)):</strong></p>
+                    $$ 2 t = n\lambda \implies 2 \left( \frac{D_n^2}{8R} \right) = n\lambda \implies D_n^2 = 4nR\lambda
+                    $$
+                    $$ D_n = \sqrt{4nR\lambda} \propto \sqrt{n} $$
+
+                    <p><strong>Diameter of \(n\)-th bright ring:</strong></p>
+                    $$ 2 t = (2n-1)\frac{\lambda}{2} \implies D_n = \sqrt{2(2n-1)R\lambda} \propto \sqrt{\text{odd
+                    numbers}} $$
+                </div>
+
+                <div class="visual-aid">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <p>Placeholder: Schematic diagram of Newton's Rings experimental setup showing the formation of
+                        fringes.</p>
+                </div>
+            </section>
+
+            <!-- Section 3: Diffraction -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-theory">Theoretical Framework</span>
+                <h2>3. Diffraction of Light</h2>
+                <p>Diffraction is the phenomenon of bending of light waves around the edges of an obstacle or an
+                    aperture, whose dimensions are comparable to the wavelength of light.</p>
+
+                <h3>Fraunhofer vs. Fresnel Diffraction</h3>
+                <p>In <strong>Fraunhofer Diffraction</strong>, the source and the screen are effectively at infinite
+                    distances from the aperture (achieved using convex lenses). The wavefront falling on the aperture is
+                    planar.</p>
+                <p>In <strong>Fresnel Diffraction</strong>, the source or the screen or both are at finite distances
+                    from the aperture without the use of lenses. The wavefront is spherical or cylindrical.</p>
+            </section>
+
+            <!-- Section 4: Single Slit Diffraction -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-math">Mathematical Derivations</span>
+                <h2>4. Fraunhofer Diffraction at a Single Slit</h2>
+                <p>Consider a monochromatic plane wave of wavelength \( \lambda \) incident normally on a slit of width
+                    \( e \). The secondary wavelets from all points within the slit interfere at a point P on a distant
+                    screen.</p>
+
+                <div class="math-block">
+                    <p>The path difference between the wavelets originating from the extreme edges of the slit is:</p>
+                    $$ \text{Path Difference} = e \sin\theta $$
+                    <p>The resultant intensity \( I \) at angle \( \theta \) is given by:</p>
+                    $$ I = I_0 \left( \frac{\sin \alpha}{\alpha} \right)^2 \quad \text{where} \quad \alpha = \frac{\pi e
+                    \sin\theta}{\lambda} $$
+                </div>
+
+                <h3>Conditions for Minima</h3>
+                <div class="math-block">
+                    $$ e \sin\theta_n = \pm n\lambda \quad \text{where } n = 1, 2, 3, \dots $$
+                    <p>The central maximum is flanked by minima symmetrically situated on either side.</p>
+                </div>
+
+                <div class="visual-aid">
+                    <i class="fa-solid fa-wave-square"></i>
+                    <p>Placeholder: Graph of Intensity \( I \) vs. \( \sin\theta \) for single slit diffraction.</p>
+                </div>
+            </section>
+
+
+            <!-- Section 5: Solved Examples -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-example">Solved Examples</span>
+                <h2>5. Numerical Problems (AKTU Pattern)</h2>
+
+                <div class="example-box">
+                    <h4>Q1: Newton's Rings</h4>
+                    <p><strong>Problem:</strong> In a Newton's rings experiment, the diameter of the 15th dark ring was
+                        found to be 0.590 cm and that of the 5th ring was 0.336 cm. If the radius of the plano-convex
+                        lens is 100 cm, calculate the wavelength of light used.</p>
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 1rem 0;">
+                    <p><strong>Solution:</strong></p>
+                    <p>Using the formula for the diameter of dark rings:</p>
+                    <div class="math-block" style="background: rgba(0,0,0,0.2);">
+                        $$ \lambda = \frac{D_{m+n}^2 - D_m^2}{4nR} $$
+                        <p>Given: \(m=5\), \(m+n=15 \implies n=10\). And \(R = 100 \text{ cm}\).</p>
+                        <p>\(D_{15} = 0.590 \text{ cm}\), \(D_5 = 0.336 \text{ cm}\).</p>
+                        $$ \lambda = \frac{(0.590)^2 - (0.336)^2}{4 \times 10 \times 100} = \frac{0.3481 -
+                        0.112896}{4000} $$
+                        $$ \lambda \approx \frac{0.2352}{4000} \text{ cm} \approx 5.88 \times 10^{-5} \text{ cm} = 5880
+                        \text{ \AA} $$
+                    </div>
+                    <p><strong>Answer:</strong> The wavelength is approximately \(5880 \text{ \AA}\).</p>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Engineering Physics Repository. Designed for AKTU Syllabus.</p>
+    </footer>
+
+</body>
+
+</html>

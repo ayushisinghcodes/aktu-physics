@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKTU Engineering Physics | Unit 2 - Quantum Mechanics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="description"
+        content="Detailed guide on Quantum Mechanics for AKTU Engineering Physics. Explores de-Broglie waves, Schrodinger equations, and particle in a box.">
+
+    <!-- MathJax for Mathematical Derivations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fa-solid fa-atom"></i>
+                AKTU<span>Physics</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#units">Back to Units</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header style="padding-bottom: 2rem;">
+            <span class="unit-number" style="font-size: 1rem;">Unit II</span>
+            <h1>Quantum Mechanics</h1>
+            <p class="subtitle" style="margin-top: 1rem;">Delving into the microscopic world. Discover the wave-particle
+                duality, uncertainty principle, and the fundamental equations governing quantum systems.</p>
+        </header>
+
+        <main>
+            <!-- Section 1: Matter Waves -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-theory">Theoretical Framework</span>
+                <h2>1. de-Broglie Matter Waves</h2>
+                <p>In 1924, Louis de Broglie hypothesized that since light (radiation) exhibits both wave and particle
+                    nature, moving material particles (like electrons) should also exhibit wave-like properties. The
+                    wave associated with a moving particle is called a <strong>matter wave</strong> or
+                    <strong>de-Broglie wave</strong>.</p>
+
+                <div class="math-block">
+                    <p>The wavelength \( \lambda \) of the matter wave is inversely proportional to its momentum \( p
+                        \):</p>
+                    $$ \lambda = \frac{h}{p} = \frac{h}{mv} $$
+                    <p>Where \( h \) is Planck's constant (\(6.626 \times 10^{-34} \text{ J s}\)).</p>
+                    <p>In terms of Kinetic Energy \( K \):</p>
+                    $$ \lambda = \frac{h}{\sqrt{2mK}} $$
+                </div>
+            </section>
+
+            <!-- Section 2: Uncertainty Principle -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-theory">Theoretical Framework</span>
+                <span class="section-tag tag-math">Mathematical Derivations</span>
+                <h2>2. Heisenberg's Uncertainty Principle</h2>
+                <p>It is impossible to determine simultaneously and accurately both the position and momentum of a
+                    moving microscopic particle. If \( \Delta x \) is the uncertainty in position and \( \Delta p \) is
+                    the uncertainty in momentum, their product must be greater than or equal to a minimum value.</p>
+
+                <div class="math-block">
+                    $$ \Delta x \cdot \Delta p \ge \frac{\hbar}{2} $$
+                    <p>Where \( \hbar = \frac{h}{2\pi} \) is the reduced Planck constant.</p>
+                    <p>Other forms of the principle include Energy-Time uncertainty:</p>
+                    $$ \Delta E \cdot \Delta t \ge \frac{\hbar}{2} $$
+                </div>
+
+                <div class="visual-aid">
+                    <i class="fa-solid fa- wave-square"></i>
+                    <p>Placeholder: Diagram showing a wave packet illustrating the uncertainty between localization
+                        (position) and wavelength (momentum).</p>
+                </div>
+            </section>
+
+            <!-- Section 3: Schrodinger Equations -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-math">Mathematical Derivations</span>
+                <h2>3. Schrödinger Wave Equations</h2>
+                <p>The Schrödinger equation describes how the quantum state of a physical system changes over time. It
+                    is the quantum equivalent of Newton's laws.</p>
+
+                <h3>Time-Dependent Form</h3>
+                <p>For a non-relativistic particle of mass \( m \) moving in a potential \( V(x,t) \) in 1D:</p>
+                <div class="math-block">
+                    $$ i\hbar \frac{\partial \Psi(x,t)}{\partial t} = -\frac{\hbar^2}{2m} \frac{\partial^2
+                    \Psi(x,t)}{\partial x^2} + V(x,t)\Psi(x,t) $$
+                </div>
+
+                <h3>Time-Independent Form</h3>
+                <p>If the potential \( V \) is independent of time, we can use separation of variables \( \Psi(x,t) =
+                    \psi(x) e^{-iEt/\hbar} \) to isolate the spatial part.</p>
+                <div class="math-block">
+                    $$ \frac{d^2 \psi(x)}{dx^2} + \frac{2m}{\hbar^2} (E - V(x)) \psi(x) = 0 $$
+                </div>
+                <p>Where \( E \) is the total energy of the system.</p>
+            </section>
+
+            <!-- Section 4: Particle in a Box -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-theory">Theoretical Framework</span>
+                <span class="section-tag tag-math">Mathematical Derivations</span>
+                <h2>4. Particle in a 1D Box (Infinite Potential Well)</h2>
+                <p>Consider a particle of mass \( m \) trapped inside a 1D box of length \( L \) (from \( x=0 \) to \(
+                    x=L \)). Inside the box, the potential \( V(x) = 0 \). Outside the box, \( V(x) = \infty \), meaning
+                    the particle cannot escape.</p>
+
+                <h3>Wavefunction Derivation</h3>
+                <p>Inside the box, the time-independent Schrödinger equation becomes:</p>
+                <div class="math-block">
+                    $$ \frac{d^2 \psi}{dx^2} + \frac{2mE}{\hbar^2} \psi = 0 \implies \frac{d^2 \psi}{dx^2} + k^2 \psi =
+                    0 $$
+                    <p>Where \( k = \frac{\sqrt{2mE}}{\hbar} \)</p>
+                    <p>The general solution is \( \psi(x) = A \sin(kx) + B \cos(kx) \).</p>
+                </div>
+
+                <p>Applying boundary conditions: \( \psi(0) = 0 \) and \( \psi(L) = 0 \).</p>
+                <div class="math-block">
+                    <p>1. \( \psi(0) = B = 0 \implies \psi(x) = A \sin(kx) \)</p>
+                    <p>2. \( \psi(L) = A \sin(kL) = 0 \).</p>
+                    <p>Since \( A \neq 0 \) (particle must exist), \( \sin(kL) = 0 \implies kL = n\pi \) where \( n = 1,
+                        2, 3, ... \)</p>
+                </div>
+
+                <h3>Quantized Energy Levels</h3>
+                <p>Substituting \( k = \frac{n\pi}{L} \) back into the expression for \( k \):</p>
+                <div class="math-block">
+                    $$ E_n = \frac{n^2 h^2}{8mL^2} $$
+                </div>
+                <p>The energies are quantized. The ground state energy (\( n=1 \)) is not zero, demonstrating the
+                    zero-point energy.</p>
+
+                <div class="visual-aid">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p>Placeholder: Graph showing normalized wavefunctions (\psi) and probability densities (|\psi|^2)
+                        for the first 3 energy levels in an infinite potential well.</p>
+                </div>
+            </section>
+
+            <!-- Section 5: Solved Examples -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-example">Solved Examples</span>
+                <h2>5. Numerical Problems (AKTU Pattern)</h2>
+
+                <div class="example-box">
+                    <h4>Q1: de-Broglie Wavelength</h4>
+                    <p><strong>Problem:</strong> Calculate the de-Broglie wavelength of an electron accelerated through
+                        a potential difference of 54 Volts.</p>
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 1rem 0;">
+                    <p><strong>Solution:</strong></p>
+                    <p>When an electron is accelerated through a potential \(V\), its kinetic energy \(K = eV\).</p>
+                    <div class="math-block" style="background: rgba(0,0,0,0.2);">
+                        $$ \lambda = \frac{h}{\sqrt{2m_e eV}} $$
+                        <p>For an electron, evaluating constants yields a direct formula: \( \lambda (\text{in \AA}) =
+                            \frac{12.27}{\sqrt{V}} \)</p>
+                        $$ \lambda = \frac{12.27}{\sqrt{54}} \approx \frac{12.27}{7.348} \approx 1.67 \text{ \AA} $$
+                    </div>
+                    <p><strong>Answer:</strong> The wavelength is approximately \(1.67 \text{ \AA}\).</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>Q2: Particle in a Box</h4>
+                    <p><strong>Problem:</strong> An electron is confined to a 1D box of width \( 1 \text{ \AA} \).
+                        Calculate the energy in eV required to excite the electron from its ground state to the first
+                        excited state.</p>
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 1rem 0;">
+                    <p><strong>Solution:</strong></p>
+                    <p>Width \(L = 10^{-10}\) m. Mass \(m_e = 9.1 \times 10^{-31}\) kg. Ground state \(n_1=1\), First
+                        excited state \(n_2=2\).</p>
+                    <div class="math-block" style="background: rgba(0,0,0,0.2);">
+                        $$ E_n = n^2 \frac{h^2}{8mL^2} $$
+                        $$ \Delta E = E_2 - E_1 = (2^2 - 1^2) \frac{h^2}{8mL^2} = 3 \frac{h^2}{8mL^2} $$
+                        $$ E_1 = \frac{(6.626 \times 10^{-34})^2}{8 \times 9.1 \times 10^{-31} \times (10^{-10})^2}
+                        \text{ Joules} = 6.03 \times 10^{-18} \text{ J} $$
+                        <p>Convert \(E_1\) to eV: \( \frac{6.03 \times 10^{-18}}{1.6 \times 10^{-19}} \approx 37.6
+                            \text{ eV} \)</p>
+                        $$ \Delta E = 3 \times 37.6 \approx 112.8 \text{ eV} $$
+                    </div>
+                    <p><strong>Answer:</strong> The required energy is approximately \(112.8\) eV.</p>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Engineering Physics Repository. Designed for AKTU Syllabus.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKTU Engineering Physics | Unit 1 - Relativistic Mechanics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="description"
+        content="Detailed guide on Relativistic Mechanics for AKTU Engineering Physics. Explores inertial frames, Lorentz transformations, and mass-energy equivalence.">
+
+    <!-- MathJax for Mathematical Derivations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fa-solid fa-atom"></i>
+                AKTU<span>Physics</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#units">Back to Units</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header style="padding-bottom: 2rem;">
+            <span class="unit-number" style="font-size: 1rem;">Unit I</span>
+            <h1>Relativistic Mechanics</h1>
+            <p class="subtitle" style="margin-top: 1rem;">Understanding the physics of objects moving near the speed of
+                light. Frames of reference, Lorentz transformations, length contraction, time dilation, and the
+                equivalence of mass and energy.</p>
+        </header>
+
+        <main>
+            <!-- Section 1: Frames of Reference -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-theory">Theoretical Framework</span>
+                <h2>1. Frames of Reference</h2>
+                <p>A <strong>frame of reference</strong> is a coordinate system consisting of coordinate axes (X, Y, Z)
+                    and a clock to measure time, used to describe the position and motion of an object.</p>
+
+                <h3>Inertial Frames</h3>
+                <p>An inertial frame of reference is one in which Newton's first law holds true—meaning an isolated
+                    object is either at rest or moving at a constant velocity. All inertial frames are in uniform
+                    translation motion with respect to one another.</p>
+
+                <h3>Non-Inertial Frames</h3>
+                <p>A non-inertial frame is a frame that is accelerating (either changing speed or direction) with
+                    respect to an inertial frame. Newton's laws appear violated here unless we introduce fictitious
+                    forces (like the centrifugal force).</p>
+
+                <div class="visual-aid">
+                    <i class="fa-solid fa-rocket"></i>
+                    <p>Placeholder: Diagram showing Inertial vs. Non-Inertial Reference Frames</p>
+                    <small>(e.g., A train moving at constant velocity vs. a train accelerating)</small>
+                </div>
+            </section>
+
+            <!-- Section 2: Galilean vs Lorentz Transformations -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-theory">Theoretical Framework</span>
+                <span class="section-tag tag-math">Mathematical Derivations</span>
+                <h2>2. Lorentz Transformations</h2>
+                <p>The <strong>Galilean Transformation</strong> equations relate the coordinates of a particle in two
+                    inertial frames moving relative to each other at a constant speed \( v \) (where \( v \ll c \)).
+                    They assume time is absolute (\( t' = t \)).</p>
+                <p>However, the <strong>Michelson-Morley experiment</strong> and Einstein's postulates of Special
+                    Relativity (constancy of the speed of light) showed that Galilean transformations fail at high
+                    velocities. Lorentz proposed new transformations.</p>
+
+                <h3>Derivation of Lorentz Transformation Equations</h3>
+                <p>Consider two inertial frames \( S \) and \( S' \). Let \( S' \) move with velocity \( v \) along the
+                    positive x-axis relative to \( S \). At \( t = t' = 0 \), their origins coincide. A light pulse is
+                    emitted from the origin. The position of the wavefront in both frames is given by:</p>
+
+                <div class="math-block">
+                    $$ x^2 + y^2 + z^2 = c^2 t^2 \quad \text{(in frame } S \text{)} $$
+                    $$ {x'}^2 + {y'}^2 + {z'}^2 = c^2 {t'}^2 \quad \text{(in frame } S' \text{)} $$
+                </div>
+
+                <p>Based on the linear relationship and symmetry, we assume a transformation form: \( x' = \gamma (x -
+                    vt) \) and \( x = \gamma (x' + vt') \), where \( \gamma \) is a constant.</p>
+
+                <div class="math-block">
+                    <p>Substituting into the wavefront equations and solving for \( \gamma \), we find:</p>
+                    $$ \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} $$
+                </div>
+
+                <p>The complete set of <strong>Lorentz Transformation Equations</strong> is:</p>
+
+                <div class="math-block">
+                    $$ x' = \frac{x - vt}{\sqrt{1 - v^2/c^2}} $$
+                    $$ y' = y $$
+                    $$ z' = z $$
+                    $$ t' = \frac{t - \frac{vx}{c^2}}{\sqrt{1 - v^2/c^2}} $$
+                </div>
+
+                <div class="visual-aid">
+                    <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                    <p>Placeholder: Diagram of Frames S and S' relative motion</p>
+                </div>
+            </section>
+
+            <!-- Section 3: Consequences -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-math">Mathematical Derivations</span>
+                <h2>3. Consequences: Length Contraction & Time Dilation</h2>
+
+                <h3>Length Contraction</h3>
+                <p>An object moving relative to an observer appears shortened along the direction of motion. Let \( L_0
+                    = x_2' - x_1' \) be proper length in frame \( S' \).</p>
+                <div class="math-block">
+                    $$ L_0 = \frac{x_2 - vt}{\sqrt{1 - v^2/c^2}} - \frac{x_1 - vt}{\sqrt{1 - v^2/c^2}} = \frac{x_2 -
+                    x_1}{\sqrt{1 - v^2/c^2}} = \frac{L}{\sqrt{1 - v^2/c^2}} $$
+                    $$ \implies L = L_0 \sqrt{1 - \frac{v^2}{c^2}} $$
+                </div>
+
+                <h3>Time Dilation</h3>
+                <p>A moving clock ticks slower relative to a stationary observer. Let a process occur at a fixed
+                    position \( x' \) in frame \( S' \), taking time \(\Delta t' = t_2' - t_1'\) (proper time \(\Delta
+                    t_0\)).</p>
+                <div class="math-block">
+                    $$ \Delta t = t_2 - t_1 = \frac{t_2' + v x'/c^2}{\sqrt{1-v^2/c^2}} - \frac{t_1' + v
+                    x'/c^2}{\sqrt{1-v^2/c^2}} = \frac{t_2' - t_1'}{\sqrt{1-v^2/c^2}} $$
+                    $$ \implies \Delta t = \frac{\Delta t_0}{\sqrt{1 - \frac{v^2}{c^2}}} $$
+                </div>
+
+                <div class="visual-aid">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Placeholder: Schematic illustrating Time Dilation (Light Clock Experiment)</p>
+                </div>
+            </section>
+
+            <!-- Section 4: Mass-Energy Equivalence -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-theory">Theoretical Framework</span>
+                <span class="section-tag tag-math">Mathematical Derivations</span>
+                <h2>4. Mass-Energy Equivalence</h2>
+                <p>Einstein demonstrated that mass is a form of energy. He derived the famous relationship between mass
+                    \( m \) and energy \( E \).</p>
+
+                <div class="math-block">
+                    <p>Starting with relativisitic momentum \( p = \gamma m_0 v \), the rate of work done on a particle
+                        increases its kinetic energy \( K \):</p>
+                    $$ dK = F \cdot dx = \left(\frac{dp}{dt}\right) dx = v \cdot dp $$
+                    <p>Integrating by parts and substituting relativistic mass yields the total energy (Rest Energy +
+                        Kinetic Energy):</p>
+                    $$ E = m_0 c^2 + K = m c^2 $$
+                </div>
+
+                <p>Where \( m_0 \) is rest mass, and \( m = \frac{m_0}{\sqrt{1-v^2/c^2}} \) is relativistic mass.</p>
+            </section>
+
+            <!-- Section 5: Solved Examples -->
+            <section class="glass glass-panel">
+                <span class="section-tag tag-example">Solved Examples</span>
+                <h2>5. Numerical Problems (AKTU Pattern)</h2>
+
+                <div class="example-box">
+                    <h4>Q1: Time Dilation</h4>
+                    <p><strong>Problem:</strong> A clock keeps correct time. With what speed should it be moved relative
+                        to an observer so that it may seem to lose 1 minute in 24 hours?</p>
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 1rem 0;">
+                    <p><strong>Solution:</strong></p>
+                    <p>Proper time \(\Delta t_0 = (24 \times 60) - 1 = 1439\) minutes.</p>
+                    <p>Observed time \(\Delta t = 24 \times 60 = 1440\) minutes.</p>
+                    <div class="math-block" style="background: rgba(0,0,0,0.2);">
+                        $$ \Delta t = \frac{\Delta t_0}{\sqrt{1 - v^2/c^2}} $$
+                        $$ 1440 = \frac{1439}{\sqrt{1 - v^2/c^2}} $$
+                        $$ 1 - \frac{v^2}{c^2} = \left(\frac{1439}{1440}\right)^2 \approx 0.9986 $$
+                        $$ \frac{v^2}{c^2} = 0.0014 \implies v = \sqrt{0.0014} \cdot c = 0.0374c $$
+                    </div>
+                    <p><strong>Answer:</strong> The clock must move at approximately \( 1.12 \times 10^7 \) m/s.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>Q2: Mass-Energy Equivalence</h4>
+                    <p><strong>Problem:</strong> Calculate the amount of work required to accelerate an electron from a
+                        velocity of \(0.6c\) to \(0.8c\). (Rest mass of electron \(m_0 = 9.1 \times 10^{-31}\) kg)</p>
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 1rem 0;">
+                    <p><strong>Solution:</strong></p>
+                    <p>Work done = Change in kinetic energy = \( \Delta K = K_2 - K_1 \)</p>
+                    <div class="math-block" style="background: rgba(0,0,0,0.2);">
+                        $$ K = (\gamma - 1) m_0 c^2 $$
+                        $$ \gamma_1 = \frac{1}{\sqrt{1 - 0.6^2}} = 1.25 $$
+                        $$ \gamma_2 = \frac{1}{\sqrt{1 - 0.8^2}} = 1.667 $$
+                        $$ \Delta K = (\gamma_2 - \gamma_1) m_0 c^2 = (1.667 - 1.25) \times 9.1 \times 10^{-31} \times
+                        (3 \times 10^8)^2 $$
+                        $$ \Delta K = 0.417 \times 9.1 \times 10^{-31} \times 9 \times 10^{16} = 3.41 \times 10^{-14}
+                        \text{ Joules} $$
+                    </div>
+                    <p><strong>Answer:</strong> The work required is \( 3.41 \times 10^{-14} \) Joules (or approx 0.213
+                        MeV).</p>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Engineering Physics Repository. Designed for AKTU Syllabus.</p>
+    </footer>
+
+</body>
+
+</html>
