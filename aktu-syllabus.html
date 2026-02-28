@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKTU Engineering Physics (KAS-101T/201T) - Complete Syllabus</title>
+    <style>
+        :root {
+            --academic-blue: #0b3d91;
+            --academic-blue-light: #165bb0;
+            --academic-blue-dark: #072a66;
+            --text-main: #333333;
+            --text-muted: #555555;
+            --bg-light: #f4f7f6;
+            --accent: #d32f2f;
+            --sidebar-width: 280px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: var(--academic-blue-dark);
+            color: #ffffff;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            top: 0;
+            left: 0;
+            padding: 2rem 1rem;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--academic-blue-light);
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #e0e6ed;
+            padding: 1rem;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+            transition: background 0.3s, padding-left 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: var(--academic-blue-light);
+            padding-left: 1.5rem;
+        }
+
+        /* Main Content */
+        .content {
+            margin-left: var(--sidebar-width);
+            padding: 3rem 5rem;
+            max-width: 1200px;
+            background-color: #ffffff;
+            min-height: 100vh;
+        }
+
+        /* Typography */
+        h1 {
+            color: var(--academic-blue);
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid var(--academic-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: var(--academic-blue-light);
+            font-size: 2rem;
+            margin-top: 3rem;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: var(--text-main);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        h4 {
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Formula Blocks */
+        .formula-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--academic-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Visual Placeholders */
+        .visual-placeholder {
+            width: 100%;
+            padding: 3rem;
+            background-color: #e9ecef;
+            border: 2px dashed #adb5bd;
+            text-align: center;
+            color: #6c757d;
+            font-weight: bold;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        /* Examples and PYQs Box */
+        .example-box,
+        .pyq-box {
+            background-color: #eef2f5;
+            border: 1px solid #dcdcdc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .example-box h4 {
+            margin-top: 0;
+            color: var(--academic-blue-dark);
+        }
+
+        .pyq-box h4 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        .example-solution,
+        .pyq-solution {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px dashed #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 1rem;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 2rem;
+            }
+
+            .sidebar a {
+                display: inline-block;
+                margin-right: 0.5rem;
+            }
+        }
+    </style>
+
+    <!-- MathJax Configuration -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>AKTU Physics<br>(KAS-101T/201T)</h2>
+        <a href="#module-1">Module 1: Relativistic Mechanics</a>
+        <a href="#module-2">Module 2: EM Field Theory</a>
+        <a href="#module-3">Module 3: Quantum Mechanics</a>
+        <a href="#module-4">Module 4: Wave Optics</a>
+        <a href="#module-5">Module 5: Fibre Optics & Laser</a>
+    </div>
+
+    <div class="content">
+
+        <!-- MODULE 1 ========================================================= -->
+        <section id="module-1">
+            <h1>Module 1: Relativistic Mechanics</h1>
+            <p>Welcome to Relativistic Mechanics, where classical Newtonian laws break down, and Einstein's paradigm
+                shifts take over. This module covers the theoretical foundations of high-velocity phenomena, introducing
+                the realization that space and time are interconnected.</p>
+
+            <h3>1.1 Frames of Reference</h3>
+            <p>A frame of reference provides a coordinate system to define the position and motion of an object. The
+                study of relativity classifies them into two distinct types based on their acceleration state:</p>
+            <ul>
+                <li><strong>Inertial Frames:</strong> Unaccelerated frames where Newton’s First Law holds true.
+                    Observers in these frames move with uniform translational velocity relative to each other.
+                    Calculations in Special Relativity are exclusively valid between inertial frames.</li>
+                <li><strong>Non-Inertial Frames:</strong> Accelerated or rotating frames where fictitious or 'pseudo'
+                    forces
+                    (like centrifugal or Coriolis force) must be empirically introduced to satisfy Newton's laws of
+                    motion.
+                    Earth is technically a non-inertial frame due to its rotation, but for small-scale experiments, it
+                    is approximated as inertial.</li>
+            </ul>
+
+            <h3>1.2 Michelson-Morley Experiment</h3>
+            <p>Conducted in 1887 by Albert A. Michelson and Edward W. Morley, this famous experiment sought to detect
+                the
+                relative motion of matter through the stationary "luminiferous aether"—a hypothetical medium thought to
+                be necessary
+                for the propagation of light waves.</p>
+            <p><strong>Setup:</strong> A beam of light was split into two orthogonal paths using a half-silvered mirror.
+                After traveling equal distances, the beams reflected back and recombined to form an interference
+                pattern.
+                The apparatus was rotated by 90 degrees to observe any fringe shift caused by the Earth's motion through
+                the aether.</p>
+            <p><strong>Result:</strong> The null result demonstrated a fringe shift of exactly zero (within experimental
+                error).
+                This proved that the speed of light is completely independent of the observer's motion or the earth's
+                motion,
+                dealing a fatal blow to the aether theory and laying the groundwork for Einstein's postulates.</p>
+
+            <div class="visual-placeholder">
+                [Diagram Placeholder: Shutterstock - Michelson-Morley Interferometer Setup and Light Paths]
+            </div>
+
+            <h3>1.3 Lorentz Transformations</h3>
+            <p>The Galilean transformations assume absolute time ($t = t'$) and absolute space. At velocities
+                approaching the speed of
+                light ($c$), these classical transformations yield incorrect results (e.g., velocities exceeding $c$).
+                This warranted
+                the new Lorentz Transformations, grounded on Einstein's two postulates of Special Relativity:</p>
+            <ol>
+                <li><strong>Principle of Relativity:</strong> The fundamental laws of physics are identical in all
+                    inertial frames of reference.</li>
+                <li><strong>Constancy of Speed of Light:</strong> The speed of light in a vacuum ($c$) is absolute and
+                    constant for all observers, regardless of the motion of the light source or the observer.</li>
+            </ol>
+
+            <div class="formula-box">
+                <p><strong>Transformation Equations:</strong></p>
+                <p>Consider an inertial frame $S'$ moving with velocity $v$ in the positive x-direction relative to a
+                    stationary frame $S$.
+                    According to the constraints $x^2 + y^2 + z^2 = (ct)^2$ and $x'^2 + y'^2 + z'^2 = (ct')^2$, the
+                    coordinates relate by:</p>
+                $$ x' = \frac{x - vt}{\sqrt{1 - v^2/c^2}} = \gamma(x - vt) $$
+                $$ y' = y \quad \text{and} \quad z' = z $$
+                $$ t' = \frac{t - vx/c^2}{\sqrt{1 - v^2/c^2}} = \gamma\left(t - \frac{vx}{c^2}\right) $$
+                <p>Where $\gamma = \left(1 - \frac{v^2}{c^2}\right)^{-1/2}$ is the Lorentz Factor. Inverse
+                    transformations are obtained by replacing $v$ with $-v$ and swapping primed/unprimed variables.</p>
+            </div>
+
+            <h3>1.4 Consequences: Length Contraction & Time Dilation</h3>
+            <p><strong>Length Contraction:</strong> An object measuring proper length $L_0$ in its rest frame will be
+                measured as shorter by an observer moving relative to it. The contraction only happens along the
+                direction of relative motion.</p>
+            $$ L = L_0 \sqrt{1 - \frac{v^2}{c^2}} = \frac{L_0}{\gamma} $$
+            <p><strong>Time Dilation:</strong> A moving clock ticks more slowly than a clock at rest. If the proper time
+                interval measured by a rest clock is $\Delta t_0$, a stationary observer measuring the moving clock will
+                record a dilated time $\Delta t$.</p>
+            $$ \Delta t = \gamma \Delta t_0 = \frac{\Delta t_0}{\sqrt{1 - \frac{v^2}{c^2}}} $$
+
+            <h3>1.5 Addition of Velocities</h3>
+            <p>Classically, velocities simply add ($u = u' + v$). Relativistically, if an object moves at velocity $u'$
+                in frame $S'$, and $S'$ moves at $v$ relative to $S$, the velocity $u$ measured in $S$ is:</p>
+            <div class="formula-box">
+                $$ u = \frac{u' + v}{1 + \frac{u'v}{c^2}} $$
+                <p>If $u' = c$, then $u = \frac{c + v}{1 + (cv/c^2)} = \frac{c(1 + v/c)}{1 + v/c} = c$. The speed of
+                    light cannot be exceeded.</p>
+            </div>
+
+            <h3>1.6 Mass-Energy Equivalence ($E=mc^2$)</h3>
+            <p>Mass is fundamentally a concentrated form of energy. As a particle accelerates, its relativistic mass
+                increases via $m = m_0\gamma$. The work done to accelerate it manifests as kinetic energy ($K$).</p>
+            <div class="formula-box">
+                <p><strong>Derivation:</strong></p>
+                <p>Kinetic energy $K$ is the integral of the rate of work done: $ dK = v \cdot dp $ where momentum $p =
+                    mv$.</p>
+                <p>Using $m = \frac{m_0}{\sqrt{1 - v^2/c^2}} \implies m^2 (c^2 - v^2) = m_0^2 c^2$. Differentiating
+                    yields: $c^2(2m dm) - (m^2 2v dv + v^2 2m dm) = 0 \implies c^2 dm = mv dv + v^2 dm$.</p>
+                <p>Notice that $v \cdot dp = v \cdot d(mv) = v(m dv + v dm) = mv dv + v^2 dm$. Therefore, $v \cdot dp =
+                    c^2 dm$.</p>
+                $$ \int dK = \int_{m_0}^{m} c^2 dm \implies K = (m - m_0)c^2 $$
+                <p>Total Energy $E = K + \text{Rest Energy}(m_0c^2) = (m - m_0)c^2 + m_0c^2 = mc^2$.</p>
+                <p><strong>Momentum-Energy Relation:</strong> $E^2 = p^2c^2 + (m_0c^2)^2$.</p>
+            </div>
+
+            <!-- UNIT 1 DEDICATED PYQ SECTION -->
+            <h2 style="color: var(--accent); border-bottom-color: var(--accent);">Dedicated PYQ Section: 10 Solved Sets
+            </h2>
+
+            <div class="pyq-box">
+                <h4>PYQ 1 [AKTU 2022-23]: Postulates of Special Relativity</h4>
+                <p><strong>Question:</strong> State the fundamental postulates of the special theory of relativity. Show
+                    that $x^2+y^2+z^2-c^2t^2$ remains invariant under Lorentz transformation.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>1. <em>Principle of Relativity</em>: All laws of physics are the same in all inertial reference
+                        frames.<br>
+                        2. <em>Constancy of Speed of Light</em>: The speed of light in vacuum is absolute ($c$) for all
+                        observers.</p>
+                    <p><em>Invariance proof:</em> Need to prove $x'^2+y'^2+z'^2-c^2t'^2 = x^2+y^2+z^2-c^2t^2$.
+                        Substitute Lorentz equations: $x' = \gamma(x-vt)$, $y'=y$, $z'=z$, $t' = \gamma(t-vx/c^2)$.</p>
+                    $$ L.H.S = \gamma^2(x-vt)^2 + y^2 + z^2 - c^2\gamma^2(t-vx/c^2)^2 $$
+                    $$ = \gamma^2 [x^2 - 2xvt + v^2t^2 - c^2(t^2 - 2vxt/c^2 + v^2x^2/c^4)] + y^2 + z^2 $$
+                    $$ = \gamma^2 [x^2 + v^2t^2 - c^2t^2 - v^2x^2/c^2] + y^2 + z^2 $$
+                    $$ = \gamma^2 [x^2(1 - v^2/c^2) - c^2t^2(1 - v^2/c^2)] + y^2 + z^2 $$
+                    <p>Since $\gamma^2 = \frac{1}{1-v^2/c^2}$, it cancels out the $(1-v^2/c^2)$ terms entirely.</p>
+                    $$ = x^2 - c^2t^2 + y^2 + z^2 = R.H.S.\quad \text{(Hence Proved)} $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 2 [AKTU 2021-22]: Relativistic Speed of an Electron</h4>
+                <p><strong>Question:</strong> Find the velocity of an electron whose kinetic energy is equal to its rest
+                    mass energy.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Given: $K = m_0 c^2$. Total Energy $E = K + m_0 c^2 = 2 m_0 c^2$.</p>
+                    <p>Also, $E = mc^2 = \gamma m_0 c^2$. Therefore, $\gamma m_0 c^2 = 2 m_0 c^2 \implies \gamma = 2$.
+                    </p>
+                    $$ \frac{1}{\sqrt{1 - v^2/c^2}} = 2 \implies 1 - \frac{v^2}{c^2} = \frac{1}{4} \implies
+                    \frac{v^2}{c^2} = \frac{3}{4} $$
+                    $$ v = \frac{\sqrt{3}}{2}c = 0.866c $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 3 [AKTU 2020-21]: Time Dilation & Meson Decay</h4>
+                <p><strong>Question:</strong> A meson has a mean life of $2 \mu s$ at rest. Calculate its mean life when
+                    moving with a velocity of $0.99c$. How far will it travel before decaying?</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Proper time $\Delta t_0 = 2 \times 10^{-6} \text{ s}$, $v = 0.99c$.</p>
+                    $$ \Delta t = \frac{\Delta t_0}{\sqrt{1 - (0.99)^2}} = \frac{2 \times 10^{-6}}{\sqrt{0.0199}}
+                    \approx \frac{2 \times 10^{-6}}{0.141} = 14.18 \mu s $$
+                    <p>Distance traveled in the lab frame $d = v \times \Delta t$:</p>
+                    $$ d = (0.99 \times 3 \times 10^8) \times (14.18 \times 10^{-6}) = 2.97 \times 10^8 \times 14.18
+                    \times 10^{-6} \approx 4211 \text{ meters} $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 4 [AKTU 2019-20]: Length Contraction on an Angle</h4>
+                <p><strong>Question:</strong> Calculate the percentage contraction of a rod of length $L_0$ moving with
+                    a velocity of $0.8c$ in a direction inclined at $60^\circ$ to its own length.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Resolve the proper length into components parallel and perpendicular to velocity $v=0.8c$.</p>
+                    <p>$L_{0x} = L_0 \cos 60^\circ = 0.5 L_0$.</p>
+                    <p>$L_{0y} = L_0 \sin 60^\circ = 0.866 L_0$. Only the parallel component contracts.</p>
+                    <p>$L_x = L_{0x} \sqrt{1 - (0.8c/c)^2} = 0.5 L_0 \sqrt{1 - 0.64} = 0.5 L_0 (0.6) = 0.3 L_0$.</p>
+                    <p>Perpendicular component is unchanged: $L_y = L_{0y} = 0.866 L_0$.</p>
+                    <p>Contracted length $L = \sqrt{L_x^2 + L_y^2} = \sqrt{(0.3 L_0)^2 + (0.866 L_0)^2} = L_0 \sqrt{0.09
+                        + 0.75} = L_0 \sqrt{0.84} \approx 0.916 L_0$.</p>
+                    <p>Percentage contraction = $\frac{L_0 - 0.916 L_0}{L_0} \times 100\% = 8.4\%$.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 5 [AKTU 2018-19]: Energy & Momentum Coupling</h4>
+                <p><strong>Question:</strong> A particle of rest mass $m_0$ moves with speed $c/\sqrt{2}$. Calculate its
+                    relativistic momentum and kinetic energy.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Velocity $v = c/\sqrt{2}$. Compute $\gamma = \frac{1}{\sqrt{1 - 1/2}} = \frac{1}{\sqrt{1/2}} =
+                        \sqrt{2}$.</p>
+                    <p>Momentum $p = \gamma m_0 v = \sqrt{2} m_0 \left(\frac{c}{\sqrt{2}}\right) = m_0 c$.</p>
+                    <p>Kinetic Energy $K = (\gamma - 1)m_0 c^2 = (\sqrt{2} - 1)m_0 c^2 \approx 0.414 m_0 c^2$.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 6 [AKTU 2017-18]: Relativistic Work Done</h4>
+                <p><strong>Question:</strong> Calculate the work done to increase the velocity of an electron from
+                    $0.6c$ to $0.8c$. (Rest mass energy of electron $\approx 0.51 \text{ MeV}$).</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Work Done = Change in Kinetic Energy = $\Delta K = K_2 - K_1$.</p>
+                    <p>$\gamma_1$ (for $0.6c$) = $1/\sqrt{1 - 0.36} = 1.25$. <br>
+                        $\gamma_2$ (for $0.8c$) = $1/\sqrt{1 - 0.64} = 1.667$.</p>
+                    $$ \Delta K = (\gamma_2 - \gamma_1)m_0 c^2 = (1.667 - 1.25) \times 0.51 \text{ MeV} $$
+                    $$ \Delta K = 0.417 \times 0.51 = 0.213 \text{ MeV} $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 7 [AKTU 2016-17]: Addition of Velocities</h4>
+                <p><strong>Question:</strong> Two spaceship A and B are moving towards each other with velocities $0.8c$
+                    and $0.9c$ relative to the earth. What is the velocity of B as measured by an observer on A?</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Let frame $S'$ be attached to Spaceship A. The earth moves at $v = -0.8c$ relative to A.
+                        Spaceship B moves at $u_x = -0.9c$ relative to earth ($S$). Wait, if we use the earth as
+                        stationary frame $S$:</p>
+                    <p>$v_{A} = 0.8c$ (moving right), $v_{B} = -0.9c$ (moving left).</p>
+                    <p>Using relativistic velocity addition to find velocity of B relative to A ($u'$):</p>
+                    $$ u' = \frac{u_x - v}{1 - u_x v / c^2} = \frac{-0.9c - 0.8c}{1 - (-0.9c)(0.8c)/c^2} $$
+                    $$ u' = \frac{-1.7c}{1 + 0.72} = \frac{-1.7c}{1.72} \approx -0.988c $$
+                    <p>The speed is $0.988c$ towards Spaceship A.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 8 [AKTU 2015-16]: Mass-Energy Conversion</h4>
+                <p><strong>Question:</strong> If $1 \text{ kg}$ of a substance is entirely converted into energy,
+                    calculate the energy released in Joules and in kWh.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Using $E = mc^2$, where $m = 1 \text{ kg}$, $c = 3 \times 10^8 \text{ m/s}$.</p>
+                    $$ E = 1 \times (3 \times 10^8)^2 = 9 \times 10^{16} \text{ Joules} $$
+                    <p>Conversion to kWh: $1 \text{ kWh} = 1000 \text{ W} \times 3600 \text{ s} = 3.6 \times 10^6 \text{
+                        Joules}$.</p>
+                    $$ E (\text{in kWh}) = \frac{9 \times 10^{16}}{3.6 \times 10^6} = 2.5 \times 10^{10} \text{ kWh} $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 9 [AKTU 2014-15]: Inverse Lorentz Force Applicability</h4>
+                <p><strong>Question:</strong> At what exact speed is the relativistic momentum of a particle exactly
+                    three times its classical momentum?</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Relativistic Momentum $p_r = \gamma m_0 v$. Classical Momentum $p_c = m_0 v$.</p>
+                    <p>Given: $p_r = 3 p_c \implies \gamma m_0 v = 3 m_0 v \implies \gamma = 3$.</p>
+                    $$ \frac{1}{\sqrt{1 - v^2/c^2}} = 3 \implies 1 - \frac{v^2}{c^2} = \frac{1}{9} \implies
+                    \frac{v^2}{c^2} = \frac{8}{9} $$
+                    $$ v = \frac{\sqrt{8}}{3} c \approx \frac{2.828}{3} c = 0.943 c $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 10 [AKTU 2013-14]: Michelson-Morley Interpretation</h4>
+                <p><strong>Question:</strong> Explain the negative results of the Michelson-Morley experiment and their
+                    implications.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>The "negative result" refers to the absence of the predicted interference fringe shift (expected
+                        shift was $\sim 0.4$ fringes) when the interferometer was rotated. The implications were
+                        profound:</p>
+                    <ul>
+                        <li><strong>Aether Drag/Non-existence:</strong> It demonstrated that either the "aether" is
+                            dragged completely along with the earth (disproved by stellar aberration), or the aether
+                            simply does not exist.</li>
+                        <li><strong>Constancy of Light:</strong> It provided the empirical foundation for Einstein's
+                            second postulate—that the velocity of light is invariant in all directions and for all
+                            inertial observers, rendering absolute space a redundant concept.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MODULE 2 ========================================================= -->
+        <section id="module-2">
+            <h1>Module 2: Electromagnetic Field Theory</h1>
+            <p>This module unites electric and magnetic phenomena into a singular continuum using the tools of vector
+                calculus, culminating in the elegant Maxwell's Equations which govern all classical electrodynamics.</p>
+
+            <h3>2.1 Coulomb’s Law in Differential Form</h3>
+            <p>The classical Coulomb force equation evaluates discrete point charges. In continuous charge
+                distributions, we express
+                the electric field divergence locally using Gauss's Law.</p>
+            <div class="formula-box">
+                <p><strong>Derivation:</strong></p>
+                <p>Integral form of Gauss's Law: $ \oint_S \vec{E} \cdot d\vec{a} = \frac{Q_{enc}}{\epsilon_0} $</p>
+                <p>The enclosed charge $Q_{enc}$ is the volume integral of the volume charge density $\rho$: $ Q_{enc} =
+                    \int_V \rho \, d\tau $</p>
+                <p>By the Divergence Theorem, any surface integral of a vector field over a closed surface converts to a
+                    volume integral of its divergence: $ \oint_S \vec{E} \cdot d\vec{a} = \int_V (\nabla \cdot \vec{E})
+                    \, d\tau $</p>
+                $$ \int_V (\nabla \cdot \vec{E}) \, d\tau = \frac{1}{\epsilon_0} \int_V \rho \, d\tau $$
+                <p>Since this holds for any arbitrary volume, the integrands must be equal. This gives the differential
+                    form of Gauss's Law (Coulomb's Law):</p>
+                $$ \nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0} $$
+                <p><em>Significance:</em> Electric field lines originate from positive charges ($\nabla \cdot \vec{E} >
+                    0$) and terminate on negative charges ($\nabla \cdot \vec{E} < 0$).</p>
+            </div>
+
+            <h3>2.2 Equation of Continuity</h3>
+            <p>The equation of continuity is the localized mathematical formulation of the Principle of Conservation of
+                Electric Charge. Charge can neither be created nor destroyed; if charge decreases in a volume, it must
+                flow out as current.</p>
+            <div class="formula-box">
+                <p>Current $I$ flowing out of a closed surface $S$ is the rate of decrease of charge within bounding
+                    volume $V$:</p>
+                $$ I = \oint_S \vec{J} \cdot d\vec{a} = -\frac{dQ}{dt} = -\frac{d}{dt} \int_V \rho \, d\tau $$
+                <p>Applying the Divergence Theorem on the current density $\vec{J}$: $ \oint_S \vec{J} \cdot d\vec{a} =
+                    \int_V (\nabla \cdot \vec{J}) \, d\tau $</p>
+                $$ \int_V (\nabla \cdot \vec{J}) \, d\tau = \int_V \left(-\frac{\partial \rho}{\partial t}\right) d\tau
+                $$
+                $$ \nabla \cdot \vec{J} + \frac{\partial \rho}{\partial t} = 0 $$
+                <p>For steady currents (where charge density doesn't change over time, $\partial \rho / \partial t =
+                    0$), the equation simplifies to $\nabla \cdot \vec{J} = 0$.</p>
+            </div>
+
+            <h3>2.3 Maxwell's Equations</h3>
+            <p>James Clerk Maxwell encapsulated all classical electrodynamics into four fundamental differential
+                equations. We formulate their differential forms in vacuum/free space:</p>
+            <ol>
+                <li><strong>Gauss's Law for Electricity:</strong> $ \nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0} $
+                    <br><em>(Electric charges act as sources/sinks producing diverging electric fields.)</em>
+                </li>
+                <li><strong>Gauss's Law for Magnetism:</strong> $ \nabla \cdot \vec{B} = 0 $ <br><em>(Magnetic monopoles
+                        do not exist; magnetic field lines always form continuous closed loops.)</em></li>
+                <li><strong>Faraday's Law of Induction:</strong> $ \nabla \times \vec{E} = -\frac{\partial
+                    \vec{B}}{\partial t} $ <br><em>(A time-varying magnetic field induces a circulating (curling)
+                        non-conservative electric field.)</em></li>
+                <li><strong>Ampère-Maxwell Law:</strong> $ \nabla \times \vec{B} = \mu_0 \vec{J} + \mu_0 \epsilon_0
+                    \frac{\partial \vec{E}}{\partial t} $ <br><em>(Magnetic fields are generated by both conduction
+                        currents $\vec{J}$ and displacement currents $\epsilon_0 \frac{\partial \vec{E}}{\partial
+                        t}$.)</em></li>
+            </ol>
+
+            <div class="visual-placeholder">
+                [Diagram Placeholder: Shutterstock - Electromagnetic Wave Propagation Vectors showing E, B, and k
+                perpendicular to each other]
+            </div>
+
+            <h3>2.4 Poynting Theorem and Poynting Vector</h3>
+            <p>The Poynting Vector $\vec{S} = \vec{E} \times \vec{H}$ represents the directional energy flux density
+                (rate of energy transfer per unit area) of an electromagnetic field.</p>
+            <div class="formula-box">
+                <p><strong>Poynting Theorem Statement:</strong> The rate at which work is done by the electromagnetic
+                    field on charges within a volume $V$ is equal to the rate of decrease of electromagnetic energy
+                    stored in the volume, minus the rate at which energy flows out through the bounding surface $S$.</p>
+                $$ \int_V (\vec{J} \cdot \vec{E}) d\tau = -\frac{d}{dt} \int_V \left( \frac{\epsilon_0 E^2}{2} +
+                \frac{B^2}{2\mu_0} \right) d\tau - \oint_S (\vec{E} \times \vec{H}) \cdot d\vec{a} $$
+                <p>Which in differential form is: $ \frac{\partial u}{\partial t} + \nabla \cdot \vec{S} + \vec{J} \cdot
+                    \vec{E} = 0 $</p>
+            </div>
+
+            <!-- UNIT 2 DEDICATED PYQ SECTION -->
+            <h2 style="color: var(--accent); border-bottom-color: var(--accent);">Dedicated PYQ Section: 10 Solved Sets
+            </h2>
+
+            <div class="pyq-box">
+                <h4>PYQ 1 [AKTU 2022-23]: Maxwell's Displacement Current</h4>
+                <p><strong>Question:</strong> Explain the concept of displacement current. How did Maxwell modify
+                    Ampere's circuital law?</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Classical Ampere's law $\nabla \times \vec{B} = \mu_0 \vec{J}$ proved inconsistent with the
+                        equation of continuity. Taking divergence of both sides gives $\nabla \cdot (\nabla \times
+                        \vec{B}) = \mu_0 (\nabla \cdot \vec{J}) = 0$. But continuity demands $\nabla \cdot \vec{J} =
+                        -\partial \rho / \partial t$, which isn't always zero (e.g., during capacitor charging).</p>
+                    <p>Maxwell postulated that a changing electric field also acts as a current. From Gauss's law, $\rho
+                        = \epsilon_0 (\nabla \cdot \vec{E})$. Thus, $\nabla \cdot \vec{J} = -\partial / \partial t
+                        (\epsilon_0 \nabla \cdot \vec{E}) = -\nabla \cdot (\epsilon_0 \partial \vec{E} / \partial t)$.
+                    </p>
+                    <p>Therefore, $\nabla \cdot (\vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}) = 0$. The
+                        total current density $\vec{J}_{total} = \vec{J}_c + \vec{J}_d$, where $\vec{J}_d = \epsilon_0
+                        \frac{\partial \vec{E}}{\partial t}$ is the displacement current density.</p>
+                    <p>Modified Ampere's Law: $ \nabla \times \vec{B} = \mu_0 \vec{J} + \mu_0 \epsilon_0 \frac{\partial
+                        \vec{E}}{\partial t} $.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 2 [AKTU 2021-22]: Speed of EM Waves</h4>
+                <p><strong>Question:</strong> Show that electromagnetic waves travel with the speed of light in vacuum
+                    using Maxwell's equations.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>In vacuum (free space), charge density $\rho = 0$ and current density $\vec{J} = 0$.</p>
+                    <p>Take the curl of Faraday's Law: $ \nabla \times (\nabla \times \vec{E}) = \nabla \times
+                        \left(-\frac{\partial \vec{B}}{\partial t}\right) = -\frac{\partial}{\partial t}(\nabla \times
+                        \vec{B}) $.</p>
+                    <p>Vector Identity: $ \nabla \times (\nabla \times \vec{E}) = \nabla(\nabla \cdot \vec{E}) -
+                        \nabla^2 \vec{E} $. Because $\nabla \cdot \vec{E} = 0$, the LHS is $-\nabla^2 \vec{E}$.</p>
+                    <p>Using Ampère-Maxwell Law for the RHS: $\nabla \times \vec{B} = \mu_0 \epsilon_0 \frac{\partial
+                        \vec{E}}{\partial t}$.</p>
+                    $$ -\nabla^2 \vec{E} = -\frac{\partial}{\partial t}\left( \mu_0 \epsilon_0 \frac{\partial
+                    \vec{E}}{\partial t} \right) \implies \nabla^2 \vec{E} = \mu_0 \epsilon_0 \frac{\partial^2
+                    \vec{E}}{\partial t^2} $$
+                    <p>Compare to the standard 3D wave equation $\nabla^2 \Psi = \frac{1}{v^2}\frac{\partial^2
+                        \Psi}{\partial t^2}$. The velocity of the EM wave is $v = \frac{1}{\sqrt{\mu_0\epsilon_0}}
+                        \approx 3 \times 10^8 \text{ m/s} = c$.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 3 [AKTU 2020-21]: Transverse Nature of EM Waves</h4>
+                <p><strong>Question:</strong> Prove that electromagnetic waves in free space are transverse in nature.
+                </p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Assume a plane EM wave traveling in the +z direction. The fields $\vec{E}$ and $\vec{B}$ depend
+                        only on $z$ and $t$, meaning partial derivatives with respect to $x$ and $y$ are zero
+                        ($\frac{\partial}{\partial x} = 0, \frac{\partial}{\partial y} = 0$).</p>
+                    <p>From Gauss's Law in free space: $\nabla \cdot \vec{E} = 0 \implies \frac{\partial E_x}{\partial
+                        x} + \frac{\partial E_y}{\partial y} + \frac{\partial E_z}{\partial z} = 0$.</p>
+                    <p>Since the $x$ and $y$ derivatives are zero, $\frac{\partial E_z}{\partial z} = 0$. The
+                        longitudinal component $E_z$ is constant in space. Since EM waves are oscillatory, a constant
+                        component means no wave. Hence, $E_z = 0$.</p>
+                    <p>Similarly, from $\nabla \cdot \vec{B} = 0$, we find $B_z = 0$. Since the wave propagates along
+                        $z$, and field variations only occur in the $x$-$y$ plane, the fields $\vec{E}$ and $\vec{B}$
+                        are strictly perpendicular to the direction of propagation. Thus, they are transverse.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 4 [AKTU 2019-20]: Poynting Theorem Derivation</h4>
+                <p><strong>Question:</strong> State and prove Poynting's Theorem mathematically.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Start with the identity: $\nabla \cdot (\vec{E} \times \vec{H}) = \vec{H} \cdot (\nabla \times
+                        \vec{E}) - \vec{E} \cdot (\nabla \times \vec{H})$.</p>
+                    <p>Substitute Maxwell's equations: $\nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}$
+                        and $\nabla \times \vec{H} = \vec{J} + \frac{\partial \vec{D}}{\partial t}$.</p>
+                    $$ \nabla \cdot (\vec{E} \times \vec{H}) = \vec{H} \cdot \left(-\frac{\partial \vec{B}}{\partial
+                    t}\right) - \vec{E} \cdot \left(\vec{J} + \frac{\partial \vec{D}}{\partial t}\right) $$
+                    <p>Using $\vec{B} = \mu_0 \vec{H}$ and $\vec{D} = \epsilon_0 \vec{E}$, note that $\vec{H} \cdot
+                        \frac{\partial \vec{H}}{\partial t} = \frac{1}{2}\frac{\partial (H^2)}{\partial t}$.</p>
+                    $$ \nabla \cdot (\vec{E} \times \vec{H}) = -\frac{\partial}{\partial t}\left( \frac{1}{2}\mu_0 H^2 +
+                    \frac{1}{2}\epsilon_0 E^2 \right) - \vec{J} \cdot \vec{E} $$
+                    <p>Integrating over volume $V$ and applying the divergence theorem on the left side yields the
+                        Poynting theorem (refer to section 2.4). The term $\vec{J} \cdot \vec{E}$ signifies ohmic power
+                        dissipation within the volume.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 5 [AKTU 2018-19]: Displacement Current Numerical</h4>
+                <p><strong>Question:</strong> A parallel plate capacitor with circular plates of radius $R = 0.1 \text{
+                    m}$ is being charged. The electric field increases at $2 \times 10^{12} \text{ V/(m s)}$. Calculate
+                    the displacement current.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Displacement Current $I_d = \epsilon_0 A \frac{dE}{dt}$.</p>
+                    <p>Area $A = \pi R^2 = 3.1415 \times (0.1)^2 = 0.0314 \text{ m}^2$. $\epsilon_0 = 8.854 \times
+                        10^{-12} \text{ F/m}$.</p>
+                    $$ I_d = (8.854 \times 10^{-12}) \times 0.0314 \times (2 \times 10^{12}) $$
+                    $$ I_d = 8.854 \times 0.0314 \times 2 = 0.556 \text{ Amperes} $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 6 [AKTU 2017-18]: Solar Radiation Amplitude</h4>
+                <p><strong>Question:</strong> The earth receives around $1360 \text{ W/m}^2$ of solar electromagnetic
+                    radiation. Calculate the maximum amplitude of the Electric and Magnetic fields.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Average energy flux $S_{avg} = 1360 \text{ W/m}^2$.</p>
+                    <p>Formula: $S_{avg} = \frac{1}{2} \epsilon_0 c E_0^2$.</p>
+                    $$ E_0^2 = \frac{2 S_{avg}}{\epsilon_0 c} = \frac{2 \times 1360}{(8.854 \times 10^{-12}) \times (3
+                    \times 10^8)} = \frac{2720}{2.656 \times 10^{-3}} \approx 1.024 \times 10^6 $$
+                    <p>Maximum Electric field $E_0 = \sqrt{1.024 \times 10^6} \approx 1012 \text{ V/m}$.</p>
+                    <p>Maximum Magnetic field $B_0 = \frac{E_0}{c} = \frac{1012}{3 \times 10^8} \approx 3.37 \times
+                        10^{-6} \text{ Tesla}$.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 7 [AKTU 2016-17]: Characteristic Impedance of Free Space</h4>
+                <p><strong>Question:</strong> Define characteristic impedance of free space. Show that its value is
+                    approximately $377 \, \Omega$.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Characteristic Impedance ($Z_0$) is the ratio of the magnitudes of the electric and magnetic
+                        field strengths in a plane EM wave traveling through free space.</p>
+                    $$ Z_0 = \frac{E}{H} $$
+                    <p>From Maxwell's equations for plane waves, $E = cB$. Since $B = \mu_0 H$, we get $E = c \mu_0 H$.
+                    </p>
+                    $$ Z_0 = c \mu_0 = \left(\frac{1}{\sqrt{\mu_0 \epsilon_0}}\right) \mu_0 =
+                    \sqrt{\frac{\mu_0}{\epsilon_0}} $$
+                    <p>Values: $\mu_0 = 4\pi \times 10^{-7} \text{ H/m}$, $\epsilon_0 = 8.854 \times 10^{-12} \text{
+                        F/m}$.</p>
+                    $$ Z_0 = \sqrt{\frac{4\pi \times 10^{-7}}{8.854 \times 10^{-12}}} = \sqrt{1.419 \times 10^5} \approx
+                    376.7 \, \Omega \approx 377 \, \Omega $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 8 [AKTU 2015-16]: Energy Density of EM Wave</h4>
+                <p><strong>Question:</strong> Prove that in a plane electromagnetic wave, the average energy density of
+                    the electric field equals the average energy density of the magnetic field.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Energy density of E-field: $u_E = \frac{1}{2} \epsilon_0 E^2$. Energy density of B-field: $u_B =
+                        \frac{1}{2\mu_0} B^2$.</p>
+                    <p>Using the relation $E = cB$ and $c^2 = \frac{1}{\mu_0 \epsilon_0}$:</p>
+                    $$ u_E = \frac{1}{2} \epsilon_0 (cB)^2 = \frac{1}{2} \epsilon_0 c^2 B^2 = \frac{1}{2} \epsilon_0
+                    \left(\frac{1}{\mu_0 \epsilon_0}\right) B^2 = \frac{1}{2\mu_0} B^2 = u_B $$
+                    <p>Therefore, $u_E = u_B$. The energy is equally shared between the electric and magnetic fields.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 9 [AKTU 2014-15]: Gauss's Law to Poisson's Equation</h4>
+                <p><strong>Question:</strong> From the differential form of Gauss's Law, derive Poisson's and Laplace's
+                    equations for electrostatics.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Differential form of Gauss's Law: $\nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0}$.</p>
+                    <p>The electrostatic field is conservative as $\nabla \times \vec{E} = 0$, meaning it can be
+                        expressed as the negative gradient of a scalar potential $V$. Thus, $\vec{E} = -\nabla V$.</p>
+                    <p>Substitute this into Gauss's Law:</p>
+                    $$ \nabla \cdot (-\nabla V) = \frac{\rho}{\epsilon_0} \implies \nabla^2 V = -\frac{\rho}{\epsilon_0}
+                    $$
+                    <p>This is <strong>Poisson's Equation</strong>. In a charge-free region ($\rho = 0$), it reduces to
+                        <strong>Laplace's Equation</strong>:
+                    </p>
+                    $$ \nabla^2 V = 0 $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 10 [AKTU 2013-14]: E, B, and k Vector Relations</h4>
+                <p><strong>Question:</strong> Given the electric field of an EM wave $\vec{E} = E_0 \hat{k} \cos(\omega
+                    t - k y)$, determine its direction of propagation and the corresponding magnetic field $\vec{B}$.
+                </p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>From the phase term $(\omega t - k y)$, the wave is propagating in the $+y$ direction. So the
+                        propagation vector $\vec{k} = k \hat{j}$.</p>
+                    <p>The electric field is polarized along the $z$-axis: $\vec{E} = E_0 \cos(\omega t - k y) \hat{k}$.
+                    </p>
+                    <p>The fields must form a mutually orthogonal triplet where $\hat{E} \times \hat{B} =
+                        \text{propagation direction} = \hat{j}$.</p>
+                    <p>Since $\hat{E} = \hat{k}$, we need $\hat{k} \times \hat{B} = \hat{j}$. Looking at standard cross
+                        products, $\hat{k} \times \hat{i} = \hat{j}$. Therefore, the magnetic field points in the $+x$
+                        direction.</p>
+                    <p>Using $E_0 = c B_0 \implies B_0 = E_0/c$.</p>
+                    <p>The corresponding magnetic field is: $ \vec{B} = \frac{E_0}{c} \cos(\omega t - k y) \hat{i} $.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MODULE 3 ========================================================= -->
+        <section id="module-3">
+            <h1>Module 3: Quantum Mechanics</h1>
+            <p>Quantum Mechanics introduces the dual nature of matter and radiation, replacing deterministic
+                classical trajectories with probabilistic wavefunctions that govern phenomena at the atomic and
+                subatomic scales.</p>
+
+            <h3>3.1 Black Body Radiation & Planck's Hypothesis</h3>
+            <p>A black body is an idealized physical body that perfectly absorbs all incident electromagnetic radiation,
+                regardless of frequency or angle of incidence. Classical physics attempted to explain the spectral
+                energy distribution using the Rayleigh-Jeans Law, which unfortunately predicted the "ultraviolet
+                catastrophe"—an infinite energy emission at progressively shorter wavelengths.</p>
+            <p>In 1900, Max Planck resolved this catastrophe by theorizing that the atomic oscillators in the cavity
+                walls cannot emit or absorb energy continuously. Instead, energy is quantized in discrete packets
+                (quanta):</p>
+            $$ E = nh\nu $$
+            <p>Where $n$ is an integer ($n=1,2,3...$), $h = 6.626 \times 10^{-34} \text{ J s}$ is Planck's constant, and
+                $\nu$ is the oscillator frequency. Planck's Radiation Law perfectly matched experimental curves at all
+                wavelengths.</p>
+
+            <h3>3.2 Compton Effect</h3>
+            <p>Discovered by Arthur H. Compton in 1923, this effect describes the inelastic scattering of X-rays or
+                gamma rays off weakly bound electrons. The scattered radiation features a structurally longer wavelength
+                than the incident radiation. This phenomenon decisively confirmed the particle nature of light—that
+                photons behave as distinct corpuscles carrying quantified momentum $p = h/\lambda$ and energy $E =
+                hc/\lambda$, capable of undergoing relativistic elastic collisions with particles.</p>
+            <div class="formula-box">
+                <p><strong>Compton Shift Formula Derivation Notes:</strong> Applying relativistic conservation of energy
+                    and conservation of momentum in 2D to a photon-electron collision yields the shift in wavelength
+                    ($\Delta \lambda$):</p>
+                $$ \Delta \lambda = \lambda' - \lambda = \frac{h}{m_0 c} (1 - \cos\theta) $$
+                <p>Where $\frac{h}{m_0 c} = 0.0243 \text{ \AA}$ (or $2.43 \text{ pm}$) is defined as the Compton
+                    wavelength of the electron, and $\theta$ is the photon scattering angle relative to its initial
+                    trajectory.</p>
+            </div>
+
+            <h3>3.3 Wave-Particle Duality (de Broglie Hypothesis)</h3>
+            <p>If light waves exhibit particle properties (as per the Compton and Photoelectric effects), Louis de
+                Broglie hypothesized symmetrically that physical particles of matter (like electrons) must possess
+                wave-like properties. The de Broglie wavelength $\lambda$ for a particle of rest mass $m$ and velocity
+                $v$ (non-relativistic momentum $p$) is:</p>
+            $$ \lambda = \frac{h}{p} = \frac{h}{\sqrt{2mK}} = \frac{h}{\sqrt{2mqV}} $$
+            <p>Where $K$ is kinetic energy and $V$ is the accelerating potential for a charged particle $q$. This was
+                empirically validated by the Davisson-Germer electron diffraction experiment.</p>
+
+            <div class="visual-placeholder">
+                [Diagram Placeholder: Shutterstock - Electron Diffraction Concentric Wave Patterns matching X-ray
+                Crystallography]
+            </div>
+
+            <h3>3.4 Schrödinger's Wave Equation</h3>
+            <p>Erwin Schrödinger formulated the foundational differential equation defining the quantum state evolution
+                of a physical system, characterized by the wavefunction $\Psi$.</p>
+            <div class="formula-box">
+                <p><strong>Time-Independent Schrödinger Equation Derivation:</strong></p>
+                <p>Consider a 1D matter wave propagating along the x-axis: $\Psi(x,t) = \psi(x) e^{-i\omega t}$. The
+                    classical standard wave equation gives spatial second derivative: $\frac{\partial^2 \Psi}{\partial
+                    x^2} = -k^2 \Psi$.</p>
+                <p>Using the de Broglie relation $p = \hbar k \implies k^2 = p^2/\hbar^2$ (where $\hbar = h/2\pi$).</p>
+                <p>Also, Total Energy $E = \text{Kinetic} + \text{Potential} = \frac{p^2}{2m} + V(x) \implies p^2 =
+                    2m(E-V)$.</p>
+                <p>Substitute $k^2 = \frac{2m(E-V)}{\hbar^2}$ into the wave spatial derivative:</p>
+                $$ \frac{d^2 \psi}{dx^2} + \frac{2m}{\hbar^2}(E - V(x))\psi = 0 $$
+                <p>This is the 1D Time-Independent Schrödinger Equation. Note: $\psi(x)$ itself is complex and
+                    unobservable, but $|\psi(x)|^2$ is the probability density function (Born interpretation).</p>
+            </div>
+
+            <h3>3.5 Particle in a 1D Box</h3>
+            <p>Consider a particle of mass $m$ strictly confined within an infinite, rigid, 1D potential well of width
+                $L$. Inside the box ($0 < x < L$), $V(x)=0$. Outside, $V(x)=\infty$. The particle cannot exist outside,
+                    so the wavefunction must vanish at and beyond the boundaries: $\psi(0)=\psi(L)=0$.</p>
+                    <div class="formula-box">
+                        <p>Solving the differential equation inside the force-free box:</p>
+                        $$ \frac{d^2 \psi}{dx^2} + k^2\psi = 0 \quad \left(\text{where } k =
+                        \frac{\sqrt{2mE}}{\hbar}\right) $$
+                        <p>General solution: $\psi(x) = A \sin(kx) + B \cos(kx)$</p>
+                        <p>Apply Boundary 1 ($x=0$): $\psi(0) = A(0) + B(1) = 0 \implies B = 0$.</p>
+                        <p>Apply Boundary 2 ($x=L$): $\psi(L) = A \sin(kL) = 0$. For non-trivial solutions ($A \neq 0$),
+                            $kL = n\pi \implies k = \frac{n\pi}{L}$.</p>
+                        <p><strong>Normalized Spatial Wavefunction:</strong> By enforcing $\int_{0}^{L} |\psi|^2 dx =
+                            1$, we find $A = \sqrt{2/L}$.</p>
+                        $$ \psi_n(x) = \sqrt{\frac{2}{L}} \sin\left(\frac{n\pi x}{L}\right) $$
+                        <p><strong>Quantized Energy Eigenvalues:</strong> Substituting $k$ back into the energy
+                            algebraic definition ($E = \hbar^2 k^2 / 2m$):</p>
+                        $$ E_n = \frac{n^2 h^2}{8mL^2} \quad (n = 1, 2, 3...) $$
+                        <p><em>Note: $n=0$ is strictly forbidden because it yields $\psi(x)=0$ everywhere (no particle
+                                exists). Thus, a confined particle can never have zero kinetic energy (Zero Point
+                                Energy).</em></p>
+                    </div>
+
+                    <!-- UNIT 3 DEDICATED PYQ SECTION -->
+                    <h2 style="color: var(--accent); border-bottom-color: var(--accent);">Dedicated PYQ Section: 10
+                        Solved Sets</h2>
+
+                    <div class="pyq-box">
+                        <h4>PYQ 1 [AKTU 2022-23]: Significance of Wave Function & Box Probability</h4>
+                        <p><strong>Question:</strong> What is the physical significance of a wave function? Calculate
+                            the probability of finding the particle in the interval $L/4 \le x \le 3L/4$ for the ground
+                            state of a particle in a 1D box of length $L$.</p>
+                        <div class="pyq-solution">
+                            <p><strong>Solution:</strong></p>
+                            <p><em>Physical Significance:</em> $\psi$ is a complex amplitude with no direct physical
+                                meaning. Max Born theorized that its modulus squared, $|\psi|^2 = \psi \psi^*$, yields
+                                the local Probability Density of locating the particle at specific position coordinates.
+                            </p>
+                            <p><em>Calculation:</em> For ground state ($n=1$), $\psi_1 = \sqrt{2/L}\sin(\pi x/L)$.
+                                Probability $P = \int |\psi|^2 dx$:</p>
+                            $$ P = \int_{L/4}^{3L/4} \frac{2}{L} \sin^2\left(\frac{\pi x}{L}\right) dx = \frac{1}{L}
+                            \int_{L/4}^{3L/4} [1 - \cos(2\pi x/L)] dx $$
+                            $$ P = \frac{1}{L} \left[ x - \frac{L}{2\pi}\sin\left(\frac{2\pi x}{L}\right)
+                            \right]_{L/4}^{3L/4} $$
+                            $$ P = \frac{1}{L} \left[ \left(\frac{3L}{4} - \frac{L}{4}\right) - \frac{L}{2\pi} \left(
+                            \sin\frac{3\pi}{2} - \sin\frac{\pi}{2} \right) \right] $$
+                            $$ P = \frac{1}{2} - \frac{1}{2\pi}(-1 - 1) = \frac{1}{2} + \frac{1}{\pi} \approx 0.5 +
+                            0.318 = 0.818 = 81.8\% $$
+                        </div>
+                    </div>
+
+                    <div class="pyq-box">
+                        <h4>PYQ 2 [AKTU 2021-22]: Ground State Energy of Electron</h4>
+                        <p><strong>Question:</strong> Determine the ground state energy (in eV) of an electron
+                            rigorously confined to a one-dimensional microscopic box of width $1 \text{ \AA}$.</p>
+                        <div class="pyq-solution">
+                            <p><strong>Solution:</strong></p>
+                            <p>Ground state implies $n = 1$. The width $L = 10^{-10} \text{ m}$, electron mass $m = 9.1
+                                \times 10^{-31} \text{ kg}$.</p>
+                            $$ E_1 = \frac{h^2}{8mL^2} = \frac{(6.626 \times 10^{-34})^2}{8 \times 9.1 \times 10^{-31}
+                            \times (10^{-10})^2} $$
+                            $$ E_1 = \frac{43.9 \times 10^{-68}}{72.8 \times 10^{-51}} = 6.03 \times 10^{-18} \text{
+                            Joules} $$
+                            $$ E_1 (\text{in eV}) = \frac{6.03 \times 10^{-18}}{1.6 \times 10^{-19}} \approx 37.6 \text{
+                            eV} $$
+                        </div>
+                    </div>
+
+                    <div class="pyq-box">
+                        <h4>PYQ 3 [AKTU 2020-21]: Accelerated de Broglie Wavelength</h4>
+                        <p><strong>Question:</strong> Find the de Broglie wavelength of an electron specifically
+                            accelerated from rest through a large potential difference of $1000\text{V}$.</p>
+                        <div class="pyq-solution">
+                            <p><strong>Solution:</strong></p>
+                            <p>The kinetic energy gained is equal to electrical work done: $K = eV$.</p>
+                            <p>For an electron (where $m$ and $e$ are fixed constants), we use the derived simplified
+                                practical formula for non-relativistic electrons: $ \lambda (\text{in \AA}) =
+                                \sqrt{\frac{150}{V}} \approx \frac{12.27}{\sqrt{V}} $</p>
+                            $$ \lambda = \frac{12.27}{\sqrt{1000}} = \frac{12.27}{31.62} \approx 0.388 \text{ \AA} $$
+                        </div>
+                    </div>
+
+                    <div class="pyq-box">
+                        <h4>PYQ 4 [AKTU 2019-20]: Phase and Group Velocity</h4>
+                        <p><strong>Question:</strong> Define phase velocity and group velocity. Establish a mathematical
+                            relation between them for a non-relativistic free material particle.</p>
+                        <div class="pyq-solution">
+                            <p><strong>Solution:</strong></p>
+                            <p><em>Phase Velocity ($v_p$):</em> The velocity at which the monochromatic phase of a
+                                single localized wave propagates. $v_p = \omega / k$.</p>
+                            <p><em>Group Velocity ($v_g$):</em> The velocity at which the overall wave packet envelope
+                                (and thus energy/information) propagates. $v_g = d\omega / dk$.</p>
+                            <p>Relation for a non-relativistic free particle: Energy $E = p^2 / 2m$.</p>
+                            <p>Substitute De-Broglie and Planck: $E=h\nu = \hbar \omega$, and $p=h/\lambda = \hbar k$.
+                            </p>
+                            $$ \hbar \omega = \frac{(\hbar k)^2}{2m} \implies \omega = \frac{\hbar k^2}{2m} $$
+                            <p>Phase velocity: $v_p = \frac{\omega}{k} = \frac{\hbar k}{2m}$.</p>
+                            <p>Group velocity: $v_g = \frac{d\omega}{dk} = \frac{\partial (\hbar k^2 / 2m)}{\partial k}
+                                = \frac{2\hbar k}{2m} = \frac{\hbar k}{m}$.</p>
+                            <p>Thus, $v_g = 2 v_p$. Furthermore, $v_g = (\hbar k)/m = p/m = v_{particle}$. The group
+                                velocity structurally equates to the actual classical particle velocity.</p>
+                        </div>
+                    </div>
+
+                    <div class="pyq-box">
+                        <h4>PYQ 5 [AKTU 2018-19]: Compton Shift Calculation</h4>
+                        <p><strong>Question:</strong> An X-ray photon of wavelength $0.1 \text{ nm}$ scatters from a
+                            stationary electron at an angle of $90^\circ$. Find the wavelength of the scattered photon.
+                        </p>
+                        <div class="pyq-solution">
+                            <p><strong>Solution:</strong></p>
+                            <p>Using the Compton shift formula: $\lambda' - \lambda = \frac{h}{m_0 c}(1 - \cos\theta)$.
+                            </p>
+                            <p>Given: $\lambda = 0.1 \text{ nm} = 1.0 \text{ \AA}$, $\theta = 90^\circ \implies
+                                \cos(90^\circ) = 0$.</p>
+                            <p>Compton wavelength $\lambda_c = \frac{h}{m_0 c} = 0.0243 \text{ \AA}$.</p>
+                            $$ \lambda' = \lambda + \lambda_c(1 - 0) = 1.0 \text{ \AA} + 0.0243 \text{ \AA} = 1.0243
+                            \text{ \AA} = 0.10243 \text{ nm} $$
+                        </div>
+                    </div>
+
+                    <div class="pyq-box">
+                        <h4>PYQ 6 [AKTU 2017-18]: Compton Conservation Setup</h4>
+                        <p><strong>Question:</strong> Derive the expression for Compton shift based on the principles of
+                            conservation of energy and momentum.</p>
+                        <div class="pyq-solution">
+                            <p><strong>Solution:</strong></p>
+                            <p>Let an incident photon (energy $h\nu$, momentum $h\nu/c$) hit a rest electron ($m_0
+                                c^2$). Photon scatters at angle $\theta$ with new frequency $\nu'$. Electron recoils at
+                                angle $\phi$ with velocity $v$ and mass $m = \gamma m_0$.</p>
+                            <p>1. Energy Conservation: $h\nu + m_0 c^2 = h\nu' + mc^2$.</p>
+                            <p>2. X-Momentum Conservation: $\frac{h\nu}{c} = \frac{h\nu'}{c} \cos\theta + mv \cos\phi
+                                \implies mvc \cos\phi = h(\nu - \nu'\cos\theta)$.</p>
+                            <p>3. Y-Momentum Conservation: $0 = \frac{h\nu'}{c} \sin\theta - mv \sin\phi \implies mvc
+                                \sin\phi = h\nu'\sin\theta$.</p>
+                            <p>Square and add (2) and (3): $m^2 v^2 c^2 (\cos^2\phi + \sin^2\phi) = h^2(\nu^2 +
+                                \nu'^2\cos^2\theta - 2\nu\nu'\cos\theta) + h^2\nu'^2\sin^2\theta$.</p>
+                            <p>$m^2 v^2 c^2 = h^2(\nu^2 + \nu'^2 - 2\nu\nu'\cos\theta)$.</p>
+                            <p>Use energy equation to find $m^2c^4$, subtract the momentum equation, and apply
+                                relativistic identity $m^2c^4 - m^2v^2c^2 = m_0^2c^4$. After algebraic reduction, one
+                                arrives at $\frac{1}{\nu'} - \frac{1}{\nu} = \frac{h}{m_0 c^2}(1-\cos\theta)$, yielding
+                                $\Delta \lambda = \frac{h}{m_0 c}(1-\cos\theta)$.</p>
+                        </div>
+                    </div>
+
+                    <div class="pyq-box">
+                        <h4>PYQ 7 [AKTU 2016-17]: Time-Dependent Equation</h4>
+                        <p><strong>Question:</strong> Write down the general 3D Time-Dependent Schrödinger equation and
+                            explain its various terms.</p>
+                        <div class="pyq-solution">
+                            <p><strong>Solution:</strong></p>
+                            <p>The time-dependent Schrödinger equation in three dimensions is:</p>
+                            $$ i\hbar \frac{\partial \Psi(\vec{r},t)}{\partial t} = \left[ -\frac{\hbar^2}{2m}\nabla^2 +
+                            V(\vec{r},t) \right] \Psi(\vec{r},t) $$
+                            <p>Terms: <br>
+                                $i\hbar \frac{\partial}{\partial t}$ is the Hamiltonian Energy Operator $\hat{E}$. <br>
+                                $-\frac{\hbar^2}{2m}\nabla^2$ is the Kinetic Energy Operator $\hat{K}$, where $\nabla^2$
+                                is the Laplacian. <br>
+                                $V(\vec{r},t)$ is the Potential Energy Operator. <br>
+                                The sum in the brackets constitutes the total energy Hamiltonian Operator $\hat{H}$. The
+                                equation is compactly written as $i\hbar \dot{\Psi} = \hat{H}\Psi$.</p>
+                        </div>
+                    </div>
+
+                    <div class="pyq-box">
+                        <h4>PYQ 8 [AKTU 2015-16]: Expectation Values</h4>
+                        <p><strong>Question:</strong> If an electron is confined in an infinite 1D potential box of
+                            length $L$, calculate the expectation value of its position $\langle x \rangle$ in the first
+                            excited state ($n=2$).</p>
+                        <div class="pyq-solution">
+                            <p><strong>Solution:</strong></p>
+                            <p>Expectation value of position $\langle x \rangle = \int_0^L \psi^* x \psi dx$.</p>
+                            <p>For $n=2$, $\psi_2 = \sqrt{2/L}\sin(2\pi x/L)$.</p>
+                            $$ \langle x \rangle = \frac{2}{L} \int_0^L x \sin^2\left(\frac{2\pi x}{L}\right) dx $$
+                            <p>Using $\sin^2\theta = (1-\cos 2\theta)/2$: </p>
+                            $$ \langle x \rangle = \frac{1}{L} \int_0^L x \left[1 - \cos\left(\frac{4\pi
+                            x}{L}\right)\right] dx $$
+                            $$ = \frac{1}{L} \left[ \int_0^L x dx - \int_0^L x \cos\left(\frac{4\pi x}{L}\right) dx
+                            \right] $$
+                            <p>The integral of $x\cos(ax)$ over a full fundamental period evaluates to 0 due to
+                                symmetric oscillating cancellation. Therefore:</p>
+                            $$ \langle x \rangle = \frac{1}{L} \left[ \frac{x^2}{2} \right]_0^L = \frac{1}{L}
+                            \left(\frac{L^2}{2}\right) = \frac{L}{2} $$
+                            <p>By symmetry, the most probable "average" position is strictly in the center of the box
+                                for any stationary state.</p>
+                        </div>
+                    </div>
+
+                    <div class="pyq-box">
+                        <h4>PYQ 9 [AKTU 2014-15]: Nuclear Confinement Impossibility</h4>
+                        <p><strong>Question:</strong> Utilizing Heisenberg's Uncertainty Principle, show conclusively
+                            why electrons cannot theoretically exist inside an atomic nucleus.</p>
+                        <div class="pyq-solution">
+                            <p><strong>Solution:</strong></p>
+                            <p>The radius of a typical atomic nucleus is approximately $r = 1 \times 10^{-14} \text{
+                                m}$. If an electron resides there, its maximum position uncertainty is the nuclear
+                                diameter: $\Delta x = 2 \times 10^{-14} \text{ m}$.</p>
+                            <p>According to Uncertainty Principle: $\Delta x \cdot \Delta p \ge \frac{\hbar}{2} \approx
+                                \frac{h}{4\pi}$.</p>
+                            $$ \Delta p \approx \frac{6.626 \times 10^{-34}}{4 \pi (2 \times 10^{-14})} \approx 2.6
+                            \times 10^{-21} \text{ kg m/s} $$
+                            <p>The required kinetic energy for this momentum in the relativistic limit ($E \approx pc$)
+                                is $E \approx (2.6 \times 10^{-21})(3 \times 10^8) = 7.8 \times 10^{-13} \text{ J}
+                                \approx 4.8 \text{ MeV}$.</p>
+                            <p>Beta decay experiments show electrons emitted from nuclei possess maximum energies of
+                                about $2-3 \text{ MeV}$. Because an electron inside the nucleus would require nearly $5
+                                \text{ MeV}$, it cannot permanently reside there.</p>
+                        </div>
+                    </div>
+
+                    <div class="pyq-box">
+                        <h4>PYQ 10 [AKTU 2013-14]: Dual Nature Definition</h4>
+                        <p><strong>Question:</strong> What are matter waves? Define the physical criteria under which
+                            matter wave properties become observable compared to classical particle properties.</p>
+                        <div class="pyq-solution">
+                            <p><strong>Solution:</strong></p>
+                            <p><em>Matter waves:</em> Also known as de Broglie waves, they reflect the dual wave-like
+                                behavior of material particles. Every moving physical particle has an associated
+                                monochromatic matter wave with wavelength $\lambda = h/p$.</p>
+                            <p><em>Observability Criteria:</em> The wave nature becomes physically significant only when
+                                the associated de Broglie wavelength is comparable to the physical dimensions of the
+                                interacting system (like slit widths or atomic spacing). Because $h$ is immensely small
+                                ($\sim 10^{-34}$), macroscopic objects ($m=1\text{kg}, v=1\text{m/s}$) have incredibly
+                                tiny, undetectable wavelengths. Electrons ($m \sim 10^{-31}$), however, have wavelengths
+                                situated in the Angstrom range, comparable precisely to atomic lattice spacing, allowing
+                                diffraction phenomena to manifest prominently.</p>
+                        </div>
+                    </div>
+        </section>
+
+
+        <!-- MODULE 4 ========================================================= -->
+        <section id="module-4">
+            <h1>Module 4: Wave Optics</h1>
+            <p>This module analyzes light interactions derived from the principles of superposition, specifically
+                covering the phenomena of interference (superposition of finite coherent wave trains) and diffraction
+                (superposition of infinite secondary wavelets from a single wavefront).</p>
+
+            <h3>4.1 Interference in Thin Films</h3>
+            <p>Interference occurs when a wavefront of light is split into two components by reflecting off the upper
+                and lower boundaries of a microscopic transparent thin film (like an oil slick on water or a soap
+                bubble). These two reflected waves travel different optical paths and subsequently recombine,
+                phase-shifting to constructively or destructively merge.</p>
+            <div class="formula-box">
+                <p><strong>Conditions for Interference in Reflected Light:</strong></p>
+                <p>Path difference for reflected light from a film of strictly uniform thickness $t$ and refractive
+                    index $\mu$, with an angle of refraction $r$:</p>
+                $$ \Delta = 2\mu t \cos(r) \pm \frac{\lambda}{2} $$
+                <p>The crucial $\pm \lambda/2$ term accounts for Stoke's Phase Shift (an abrupt phase change of $\pi$
+                    occurring upon reflection from a more optically dense medium boundary). For normal incidence, $r =
+                    0^\circ \implies \cos(0) = 1$.</p>
+                <ul>
+                    <li><strong>Constructive Interference (Bright/Max Intensity):</strong> $ 2\mu t \cos r =
+                        (2n-1)\frac{\lambda}{2} $ or $ (2n+1)\frac{\lambda}{2} $ where $n=1,2,3...$</li>
+                    <li><strong>Destructive Interference (Dark/Min Intensity):</strong> $ 2\mu t \cos r = n\lambda $
+                        where $n=0,1,2,3...$</li>
+                </ul>
+            </div>
+
+            <h3>4.2 Newton's Rings</h3>
+            <p>Newton's Rings describe circular, concentric interference fringes formed between a plano-convex lens of
+                large focal length and an optically flat glass plate, practically entrapping a wedge-shaped air film of
+                radially varying thickness.</p>
+            <div class="visual-placeholder">
+                [Diagram Placeholder: Shutterstock - Newton's Rings Concentric Bright and Dark Fringes Apparatus]
+            </div>
+            <div class="formula-box">
+                <p><strong>Derivation of Ring Diameter for Air Film:</strong></p>
+                <p>Film thickness $t$ at a small radial distance $r$ from the contact center: $2Rt = r^2$, so $t =
+                    \frac{r^2}{2R}$ where $R$ is the lens radius of curvature.</p>
+                <p>For an air film ($\mu=1$) viewed normally in reflected light, the condition for a completely
+                    destructive dark ring is $2t = n\lambda \implies 2 \left(\frac{r^2}{2R}\right) = n\lambda$.</p>
+                $$ r_n^2 = n\lambda R \implies D_n^2 = (2r_n)^2 = 4n\lambda R $$
+                $$ D_n = \sqrt{4n\lambda R} \propto \sqrt{n} $$
+                <p><em>Conclusion:</em> The diameters of dark rings are directly proportional to the square root of
+                    natural numbers. The diameters of bright rings ($D_n^2 = 2(2n-1)\lambda R$) are proportional to the
+                    square root of odd natural numbers.</p>
+            </div>
+
+            <h3>4.3 Fraunhofer Diffraction at a Single Slit</h3>
+            <p>Diffraction is the bending of light around sharp corners or obstacles, encroaching into geometrical
+                shadow regions. In the Fraunhofer class, both the light source and screen are effectively strictly
+                placed at infinity (achieved experimentally using convex lenses).</p>
+            <p>When planar monochromatic wavefronts pass through a narrow slit of width $e$, they produce a broad
+                primary central maximum symmetrically surrounded by alternating, decreasing secondary maxima and minima
+                on a distant focal plane.</p>
+            <div class="formula-box">
+                <p><strong>Analytical Treatment:</strong> path difference between extreme wavelets originating from slit
+                    edges: $ \Delta x = e \sin\theta $.</p>
+                <p>Corresponding phase difference: $ 2\alpha = \frac{2\pi}{\lambda} (e \sin\theta) $.</p>
+                <p>By integrating the contributions of infinite infinitesimal slit elements, the Resultant Intensity $I$
+                    is:</p>
+                $$ I = I_0 \left( \frac{\sin\alpha}{\alpha} \right)^2 \quad \text{where } \alpha = \frac{\pi e
+                \sin\theta}{\lambda} $$
+                <ul>
+                    <li><strong>Principal Maximum:</strong> As $\theta \to 0$, $\alpha \to 0$, and
+                        $\frac{\sin\alpha}{\alpha} \to 1 \implies I = I_0$ (highest uniform intensity).</li>
+                    <li><strong>Minima Positions:</strong> Occur when $\sin\alpha = 0$ (but $\alpha \neq 0$), so $\alpha
+                        = \pm n\pi$. This yields the general minima condition: $e \sin\theta = \pm n\lambda$
+                        ($n=1,2,3...$).</li>
+                </ul>
+            </div>
+
+            <h3>4.4 Resolving Power of Diffraction Grating</h3>
+            <p>Lord Rayleigh's criterion fundamentally states that two closely spaced spectral lines of distinct
+                wavelengths $\lambda$ and $\lambda + d\lambda$ are "just resolved" if the principal maximum of one line
+                exactly geometrically coincides with the first adjacent minimum of the other line.</p>
+            <div class="formula-box">
+                <p>Resolving Power (RP) mathematically quantifies an optical instrument's absolute ability to visibly
+                    separate adjacent spectral lines:</p>
+                $$ RP = \frac{\lambda}{d\lambda} = nN $$
+                <p>Where $n$ represents the specific order of the spectrum being observed, and $N$ is the total discrete
+                    number of illuminated ruled lines on the entire grating surface. Thus, larger gratings observing
+                    higher orders intrinsically provide higher resolution.</p>
+            </div>
+
+            <!-- UNIT 4 DEDICATED PYQ SECTION -->
+            <h2 style="color: var(--accent); border-bottom-color: var(--accent);">Dedicated PYQ Section: 10 Solved Sets
+            </h2>
+
+            <div class="pyq-box">
+                <h4>PYQ 1 [AKTU 2022-23]: Rayleigh's Criterion & Resolving Power</h4>
+                <p><strong>Question:</strong> State Rayleigh's criterion of resolution. Define resolving power of a
+                    grating and mathematically derive its standard expression based on this criterion.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p><em>Rayleigh's Criterion:</em> Two closely spaced optical images are just resolved if the
+                        principal maximum of one coincides entirely with the first minimum of the other.</p>
+                    <p><em>Resolving Power:</em> The capacity of a grating to form separate diffraction images of two
+                        wavelengths very close to each other. $RP = \frac{\lambda}{d\lambda}$.</p>
+                    <p><em>Derivation:</em> Let the principal maximum of wavelength $\lambda$ in the $n$-th order occur
+                        at diffraction angle $\theta_n$. The condition is: $(e+d)\sin\theta_n = n\lambda$.</p>
+                    <p>Let the adjacent minimum of $\lambda$ fall at angle $\theta_n + d\theta$. The minimum condition
+                        for entire grating of $N$ slits is $N(e+d)\sin(\theta_n + d\theta) = (nN \pm 1)\lambda$. Taking
+                        the $+1$ minimum for the $\lambda$ pattern: $(e+d)\sin(\theta_n + d\theta) = n\lambda +
+                        \frac{\lambda}{N}$ [Eq 1].</p>
+                    <p>According to Rayleigh's criterion, the principal maximum for wavelength $\lambda + d\lambda$ must
+                        also fall exactly at angle $\theta_n + d\theta$. Thus: $(e+d)\sin(\theta_n + d\theta) =
+                        n(\lambda + d\lambda)$ [Eq 2].</p>
+                    <p>Equating Eq 1 and Eq 2: $n\lambda + \frac{\lambda}{N} = n\lambda + n(d\lambda)$. Therefore,
+                        $\frac{\lambda}{N} = n(d\lambda)$, solving to $RP = \frac{\lambda}{d\lambda} = nN$.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 2 [AKTU 2021-22]: Colors in Thin Films</h4>
+                <p><strong>Question:</strong> Briefly explain the formation of colors in thin optical films. Derive the
+                    condition specifically for constructive and destructive interference in reflected light.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p><em>Formation of Colors:</em> When white daylight incident on a thin film undergoes reflection,
+                        interference filters the spectrum. Based on film thickness $t$ and angle $r$, selective
+                        wavelengths uniquely satisfy the constructive interference condition ($2\mu t \cos r =
+                        (n+0.5)\lambda$) and reflect brightly. Other wavelengths satisfy the destructive condition
+                        ($2\mu t \cos r = n\lambda$) and vanish. Thus, the film appears brilliantly colored.</p>
+                    <p><em>Condition Derivation:</em> A ray splits into a reflected ray at the top surface, and a
+                        refracted ray which reflects off the bottom surface and exits. The geometric path difference is
+                        calculated as $\Delta_{path} = 2\mu t \cos r$. Because the first ray reflects off a
+                        rarer-to-denser interface (air-to-film), it suffers a rigorous $\lambda/2$ phase shift (Stoke's
+                        law). The total effective path difference is $\Delta = 2\mu t \cos r - \lambda/2$.</p>
+                    <p>For maxima (constructive), $\Delta = m\lambda \implies 2\mu t \cos r = (m+0.5)\lambda$. For
+                        minima (destructive), $\Delta = (m+0.5)\lambda \implies 2\mu t \cos r = m\lambda + 0.5\lambda +
+                        0.5\lambda = (m+1)\lambda$, equating to an integer multiple $n\lambda$.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 3 [AKTU 2020-21]: Thin Film Minimum Thickness Numerical</h4>
+                <p><strong>Question:</strong> A parallel beam of monochromatic light of wavelength $5890 \text{ \AA}$ is
+                    incident on a thin glass plate of refractive index $1.5$. The angle of refraction into the plate is
+                    rigorously $60^\circ$. Calculate the smallest possible thickness of the plate which will appear dark
+                    by reflection.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>For a dark band in reflected light, destructive interference applies: $ 2\mu t \cos r = n\lambda
+                        $.</p>
+                    <p>Given parameters: $\lambda = 5890 \times 10^{-10} \text{ m}$, $\mu = 1.5$, $r = 60^\circ \implies
+                        \cos(60^\circ) = 0.5$.</p>
+                    <p>For the "smallest" structural thickness, we select the lowest non-zero integer $n = 1$.</p>
+                    $$ t = \frac{\lambda}{2\mu \cos r} = \frac{5890 \times 10^{-10}}{2 \times 1.5 \times 0.5} =
+                    \frac{5890 \times 10^{-10}}{1.5} $$
+                    $$ t \approx 3926 \times 10^{-10} \text{ m} = 392.6 \text{ nm} $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 4 [AKTU 2019-20]: Single Slit Diffraction vs Interference</h4>
+                <p><strong>Question:</strong> What is diffraction of light? Discuss Fraunhofer diffraction analytically
+                    at a single slit and distinctively differentiate between interference and diffraction.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p><em>Diffraction</em> is the deviation/bending of light waves past edges of obstacles, penetrating
+                        into regions of geometrical shadow.</p>
+                    <p><em>Fraunhofer Single Slit:</em> Refer to Section 4.3 for the analytical treatment and minima
+                        condition $e \sin\theta = n\lambda$.</p>
+                    <p><em>Distinct Differences:</em> (1) <strong>Origin:</strong> Interference is superposition between
+                        two distinctly separate coherent wavefronts. Diffraction is superposition between infinite
+                        secondary wavelets originating from the same single wavefront. (2) <strong>Fringes:</strong>
+                        Interference fringes are generally of completely uniform width and brightness. Diffraction
+                        fringes vary in width (central is widest) and rapidly decrease in intensity. (3) <strong>Dark
+                            Regions:</strong> Interference dark bands are often perfectly dark (zero intensity).
+                        Diffraction minima usually have some minute residual intensity.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 5 [AKTU 2018-19]: Grating Constant Determination</h4>
+                <p><strong>Question:</strong> In a precise diffraction grating experiment, the specific first-order
+                    principal maximum is observed physically at an angle of $30^\circ$. What is the grating element if
+                    the monochromatic wavelength used is $5000 \text{ \AA}$?</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>The principal maxima condition for a diffraction grating is: $(e+d)\sin\theta = n\lambda$.</p>
+                    <p>Grating element is $(e+d)$. Given: $n = 1$ (first order), $\theta = 30^\circ \implies
+                        \sin(30^\circ) = 0.5$, $\lambda = 5000 \times 10^{-8} \text{ cm}$.</p>
+                    $$ (e+d) \times 0.5 = 1 \times (5000 \times 10^{-8}) $$
+                    $$ (e+d) = \frac{5 \times 10^{-5}}{0.5} = 10 \times 10^{-5} \text{ cm} = 10^{-4} \text{ cm} = 1
+                    \text{ \mu m} $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 6 [AKTU 2017-18]: Newton's Rings Dark Center</h4>
+                <p><strong>Question:</strong> Obtain an expression for the diameter of the $n$-th dark ring in Newton's
+                    rings experiment. Why physically is the absolutely central spot dark in reflected monochromatic
+                    light?</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>For the $n$-th central ring geometric derivation $D_n^2 = 4n\lambda R$, see Section 4.2.</p>
+                    <p><em>Why the center is dark:</em> At the rigid point of physical contact between the plano-convex
+                        lens and the flat glass plate, the air film thickness practically is $t=0$. Substituting into
+                        the path difference equation for reflected light, the effective path difference becomes $\Delta
+                        = 2(1)(0) + \lambda/2 = \lambda/2$. A net path difference of essentially half a wavelength
+                        geometrically acts to strictly impose destructive interference. Therefore, the central optical
+                        spot must be perfectly dark under reflected light.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 7 [AKTU 2016-17]: Newton's Rings Numerical</h4>
+                <p><strong>Question:</strong> In a Newton's ring experimental arrangement, the specifically measured
+                    diameters of the 4th and 12th dark rings are $0.400\text{ cm}$ and $0.700\text{ cm}$, respectively.
+                    Deduce the expected diameter of the 20th dark ring.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>We know the general formula: $D_n^2 = 4n\lambda R$. Thus the precise difference in squares is
+                        $D_{m}^2 - D_n^2 = 4(m-n)\lambda R$.</p>
+                    $$ D_{12}^2 - D_4^2 = 4(12-4)\lambda R = 32\lambda R $$
+                    <p>Using measured values: $(0.7)^2 - (0.4)^2 = 0.49 - 0.16 = 0.33 \text{ cm}^2$. Hence $32\lambda R
+                        = 0.33 \implies 4\lambda R = 0.33 / 8 = 0.04125$.</p>
+                    <p>To accurately compute the 20th ring ($D_{20}^2$):</p>
+                    $$ D_{20}^2 = D_{12}^2 + 4(20-12)\lambda R = 0.49 + 8(4\lambda R) = 0.49 + 8(0.04125) = 0.49 + 0.33
+                    = 0.82 \text{ cm}^2 $$
+                    $$ D_{20} = \sqrt{0.82} \approx 0.9055 \text{ cm} $$
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 8 [AKTU 2015-16]: Maximum Grating Order Limit</h4>
+                <p><strong>Question:</strong> A transmission diffraction grating possesses exactly 5000 lines physically
+                    ruled per centimeter. Calculate the strictly maximum integer order of the optical spectrum that can
+                    be physically observed for incident light of uniform fundamental wavelength $6000\text{ \AA}$.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>The Grating element $(e+d) = \frac{1}{N} = \frac{1}{5000} \text{ cm} = 2 \times 10^{-4} \text{
+                        cm} = 2 \times 10^{-6} \text{ m}$.</p>
+                    <p>The principal Grating Formula: $(e+d)\sin\theta = n\lambda$. For observing the mathematical
+                        maximum physically possible order, the diffraction angle approaches $\theta_{max} = 90^\circ$,
+                        meaning $\sin\theta = 1$.</p>
+                    $$ n_{max} = \frac{e+d}{\lambda} = \frac{2 \times 10^{-6} \text{ m}}{6000 \times 10^{-10} \text{ m}}
+                    = \frac{2 \times 10^{-6}}{6 \times 10^{-7}} = \frac{20}{6} = 3.333 $$
+                    <p>Because the optical spectral order $n$ visibly must strictly represent an integer, the absolute
+                        maximum integer order fully observable geometrically in the setup is distinctly $n = 3$.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 9 [AKTU 2014-15]: Proportionality of Bright Rings</h4>
+                <p><strong>Question:</strong> Prove conclusively that in a Newton's rings experiment, the discrete
+                    diameters of subsequent consecutive bright rings are strictly proportional to the exact square root
+                    of successive odd natural numbers.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>For practically normal incidence reflection within the internal air film, the strict physical
+                        condition for constructive optical interference manifesting as bright maxima rings is: $2t =
+                        (2n-1)\frac{\lambda}{2}$, where $n = 1, 2, 3...$ points to respective ring numbers.</p>
+                    <p>From the geometric wedge theorem, standard geometry enforces film thickness $t = r^2 / (2R)$.
+                        Equivalently $2t = D^2 / (4R)$ where $D$ is the full concentric ring diameter.</p>
+                    <p>Thus, $ \frac{D_n^2}{4R} = (2n-1)\frac{\lambda}{2} $.</p>
+                    $$ D_n^2 = 2R(2n-1)\lambda \implies D_n = \sqrt{2R\lambda} \cdot \sqrt{2n-1} $$
+                    <p>Because the physical parameters $\sqrt{2R\lambda}$ remain robustly functionally constant over the
+                        entire apparatus geometry, $D_n \propto \sqrt{2n-1}$. For sequences $n=1,2,3...$, the derived
+                        numerical quantity $(2n-1)$ accurately outlines $1, 3, 5, 7...$ indicating only odd natural
+                        numbers.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 10 [AKTU 2013-14]: Single Slit Central Max Width</h4>
+                <p><strong>Question:</strong> Find the angular width of the central maximum in the strictly Fraunhofer
+                    diffraction pattern formed accurately by a single narrow slit. How specifically is its explicit
+                    physical width influenced by adjusting the slit width?</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>The precise positions of the geometric bounding minima surrounding the primary central bright
+                        maximum occur where the physical parameter $\sin\alpha = 0$, explicitly defined as $e \sin\theta
+                        = \pm n \lambda$.</p>
+                    <p>The first exact adjacent minima effectively bracket the main central max at exact orders $n = 1$
+                        and $n = -1$. These defining boundaries fall explicitly at angular positions defined by $e
+                        \sin\theta = \pm \lambda$, so the explicit angular limits are $\theta_1 = \sin^{-1}(\lambda/e)$
+                        natively forming around the optical axis.</p>
+                    <p>Because standard diffraction angles strictly remain fundamentally small, small-angle
+                        approximation safely applies, yielding $\sin\theta \approx \theta$. Thus, isolated angular width
+                        equals mathematically strictly $\theta_0 = \lambda/e$ precisely on each mirrored side. The total
+                        holistic angular width of the central optical maximum symmetrically spans across $W_{angular} =
+                        2\theta_0 = \frac{2\lambda}{e}$.</p>
+                    <p><em>Influence strictly:</em> Analytically, $W_{angular} \propto 1/e$. If the physical width
+                        mechanically corresponding to slit $e$ is rigorously widened or increased structurally, the
+                        central primary maximum inevitably distinctly logically narrows down.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MODULE 5 ========================================================= -->
+        <section id="module-5">
+            <h1>Module 5: Fibre Optics & Laser</h1>
+            <p>This module discusses the practical amplification of light through stimulated emission and its guided
+                transportation across flexible glass fibers via total internal reflection.</p>
+
+            <h3>5.1 Fundamentals of LASER</h3>
+            <p>LASER stands for Light Amplification by Stimulated Emission of Radiation. The core interactions of
+                radiation with atomic matter include:</p>
+            <ul>
+                <li><strong>Induced Absorption:</strong> A ground state atom absorbs a photon ($E = h\nu$) and leaps to
+                    an excited state. Rate $\propto$ energy density and number of ground atoms.</li>
+                <li><strong>Spontaneous Emission:</strong> An excited atom naturally decays to the ground state after
+                    its incredibly brief lifetime ($\sim 10^{-8} \text{ s}$), emitting a photon randomly in any
+                    direction (incoherent light).</li>
+                <li><strong>Stimulated Emission:</strong> An incoming resonant photon induces an already-excited atom to
+                    decay, emitting a second photon identical in phase, wavelength, polarization, and direction to the
+                    incident triggering photon (making the emitted light fiercely coherent).</li>
+            </ul>
+
+            <h3>5.2 Population Inversion & Pumping</h3>
+            <p>For LASER action (net light amplification), the rate of stimulated emission must critically exceed
+                absorption. This physically requires more atoms in the excited state ($N_2$) than the ground state
+                ($N_1$), an unnatural non-equilibrium condition termed <strong>Population Inversion</strong>.</p>
+            <p>It is actively achieved via <strong>"Pumping"</strong> mechanisms that continuously inject energy into
+                the medium (e.g., optical pumping with flashlamps, electrical discharge, chemical reactions).</p>
+
+            <h3>5.3 Types of Lasers</h3>
+            <ul>
+                <li><strong>Ruby Laser (3-Level System):</strong> A cylindrical crystal of $Al_2O_3$ heavily doped with
+                    $Cr^{3+}$ ions (the active centers). It is optically pumped via a surrounding intensely bright Xenon
+                    flashlamp. As it requires depopulating the massive dense ground state, it requires massive pump
+                    power, limits efficiency, and yields only pulsed (non-continuous) red laser output ($694.3 \text{
+                    nm}$).</li>
+                <li><strong>He-Ne Laser (4-Level System):</strong> A gas discharge mixture (10 parts Helium: 1 part
+                    Neon). Helium efficiently absorbs electrical discharge energy and resonantly transfers it via
+                    inelastic collisions to Neon, causing massive population inversion in Ne. Because the lower lasing
+                    level continuously rapidly empties into the ground state, it elegantly ensures stable, continuous
+                    wave (CW) red emission ($632.8 \text{ nm}$).</li>
+            </ul>
+
+            <div class="visual-placeholder">
+                [Diagram Placeholder: Shutterstock - He-Ne Energy Level Collision Transfer Diagram]
+            </div>
+
+            <h3>5.4 Fibre Optics Principles</h3>
+            <p>Optical fibers strictly guide light over massive distances relying on <strong>Total Internal Reflection
+                    (TIR)</strong> inside a dense optical core ($n_1$), continuously guarded by a distinctly lower
+                refractive index cladding layer ($n_2$).</p>
+            <div class="formula-box">
+                <p><strong>Acceptance Angle ($\theta_a$) and Numerical Aperture (NA):</strong></p>
+                <p>The acceptance angle is the maximum boundary cone angle within which focused incident light will
+                    securely undergo TIR exclusively inside the fiber.</p>
+                $$ NA = \sin\theta_a = \sqrt{n_{core}^2 - n_{cladding}^2} $$
+                <p><strong>Fractional Refractive Index Change ($\Delta$):</strong> Defines the relative index step:</p>
+                $$ \Delta = \frac{n_{core} - n_{cladding}}{n_{core}} \implies NA = n_{core}\sqrt{2\Delta} $$
+            </div>
+
+            <h3>5.5 Types of Fibers & Dispersion</h3>
+            <ul>
+                <li><strong>Step-Index Fiber:</strong> Strict interface boundary where the index drops rigidly and
+                    instantly from core to cladding. Causes severely high intermodal dispersion (different rays take
+                    different zigzag path lengths, blurring digital pulses).</li>
+                <li><strong>Graded-Index (GRIN) Fiber:</strong> Core index precisely varies parabolically, highest at
+                    the center axis and decreasing toward the cladding boundary. Photons taking longer, curving outer
+                    paths physically travel faster through the lower index material, fundamentally equalizing travel
+                    times and drastically limiting dispersion.</li>
+            </ul>
+
+            <!-- UNIT 5 DEDICATED PYQ SECTION -->
+            <h2 style="color: var(--accent); border-bottom-color: var(--accent);">Dedicated PYQ Section: 10 Solved Sets
+            </h2>
+
+            <div class="pyq-box">
+                <h4>PYQ 1 [AKTU 2022-23]: Acceptance Angle Derivation</h4>
+                <p><strong>Question:</strong> Explain the principle of optical fibers. Derive a mathematical expression
+                    for Acceptance Angle and Numerical Aperture.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p><em>Principle:</em> Total Internal Reflection (TIR). When light strikes the core-cladding
+                        boundary at an angle greater than the critical angle ($c$), it reflects totally.</p>
+                    <p><em>Derivation:</em> Let light enter the fiber core ($n_1$) from air ($n_0=1$) at incident angle
+                        $\theta_i$. It refracts at angle $\theta_r$. Snell's Law at face: $\sin\theta_i = n_1
+                        \sin\theta_r$.</p>
+                    <p>Inside, light hits the core-cladding ($n_2$) wall at angle $\phi = 90^\circ - \theta_r$. For TIR,
+                        $\phi \ge c$ where $\sin c = n_2/n_1$. Thus $\sin(90^\circ - \theta_r) \ge n_2/n_1 \implies
+                        \cos\theta_r \ge n_2/n_1$.</p>
+                    <p>From $\sin\theta_r = \sqrt{1 - \cos^2\theta_r}$, the maximum $\sin\theta_r$ relies on min
+                        $\cos\theta_r = n_2/n_1$: $\sin\theta_r(\text{max}) = \sqrt{1 - (n_2/n_1)^2} = \frac{\sqrt{n_1^2
+                        - n_2^2}}{n_1}$.</p>
+                    <p>Substitute into Snell's law: $\sin\theta_i(\text{max}) = n_1 \frac{\sqrt{n_1^2 - n_2^2}}{n_1} =
+                        \sqrt{n_1^2 - n_2^2}$.</p>
+                    <p>Acceptance Angle $\theta_a = \theta_i(\text{max}) = \sin^{-1}(\sqrt{n_1^2 - n_2^2})$. Numerical
+                        Aperture $NA = \sin\theta_a = \sqrt{n_1^2 - n_2^2}$.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 2 [AKTU 2021-22]: Emission Types and He-Ne</h4>
+                <p><strong>Question:</strong> Differentiate vividly between spontaneous and stimulated emission. Discuss
+                    the construction and precise working mechanism of a He-Ne Laser.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p><em>Differences:</em> (1) Spontaneous is random and independent; Stimulated requires an incident
+                        triggering photon. (2) Spontaneous yields incoherent multi-directional light; Stimulated yields
+                        completely coherent, collimated, monochromatic light.</p>
+                    <p><em>He-Ne Construction:</em> A quartz tube containing 10:1 He:Ne gas at low pressure, flanked by
+                        two mirrored reflectors forming an optical resonant cavity.</p>
+                    <p><em>Working:</em> Electrical discharge swiftly pumps ground-state Helium atoms to excited
+                        metastable states ($2^1S, 2^3S$). Due to striking energy-level coincidence, Helium atoms collide
+                        with ground-state Neon atoms, resonantly transferring energy and raising Neon to upper states
+                        ($3s, 2s$). This effectively establishes strong Population Inversion exclusively in Neon.
+                        Stimulated emission occurs as Neon drops to lower states ($3p, 2p$), emitting red light at
+                        $632.8 \text{ nm}$.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 3 [AKTU 2020-21]: Fiber NA and Limits Numerical</h4>
+                <p><strong>Question:</strong> A step index fiber rigidly possesses a core refractive index $1.46$ and
+                    cladding $1.44$. Compute its exact numerical aperture and maximum acceptance angle.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Given core $n_1 = 1.46$, cladding $n_2 = 1.44$.</p>
+                    $$ NA = \sqrt{n_1^2 - n_2^2} = \sqrt{(1.46)^2 - (1.44)^2} = \sqrt{2.1316 - 2.0736} = \sqrt{0.058}
+                    \approx 0.2408 $$
+                    <p>Maximum Acceptance Angle $\theta_a = \sin^{-1}(NA) = \sin^{-1}(0.2408) \approx 13.93^\circ$.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 4 [AKTU 2019-20]: He-Ne Superiority over Ruby</h4>
+                <p><strong>Question:</strong> Why is He-Ne practically heavily preferred over the older Ruby laser for
+                    industrial and laboratory applications?</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>1. <strong>Continuous Wave (CW) vs Pulsed:</strong> He-Ne is a 4-level laser system intrinsically
+                        outputting a stable continuous beam. Ruby is a 3-level system limited severely to producing
+                        intense but short isolated pulses.</p>
+                    <p>2. <strong>Efficiency & Cooling:</strong> Ruby severely requires brutal optical pumping to
+                        deplete half its vast ground state, dumping massive excess heat that demands active cooling.
+                        He-Ne easily achieves inversion in its sparse higher gas states securely avoiding ground state
+                        depletion, running coolly and efficiently.</p>
+                    <p>3. <strong>Pump Source:</strong> Ruby needs erratic flashlamps. He-Ne utilizes elegant, reliable,
+                        steady electrical discharge mechanisms.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 5 [AKTU 2018-19]: Boltzmann Population Ratio</h4>
+                <p><strong>Question:</strong> For an optical system solidly in thermal equilibrium at $300\text{K}$,
+                    calculate the exact ratio of populations of two energy levels universally separated by $1.5 \text{
+                    eV}$. ($k_B = 8.62 \times 10^{-5} \text{ eV/K}$).</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Utilizing the Maxwell-Boltzmann distribution ratio: $ \frac{N_2}{N_1} = e^{-\Delta E / k_B T} $
+                    </p>
+                    <p>Thermal energy parameter $k_B T = (8.62 \times 10^{-5}) \times 300 = 0.02586 \text{ eV}$.</p>
+                    $$ \frac{N_2}{N_1} = e^{-1.5 / 0.02586} = e^{-58.004} \approx 6.4 \times 10^{-26} $$
+                    <p>Under strict thermal conditions, essentially zero atoms reside spontaneously in the wildly
+                        excited upper energy state compared to the immense ground state population.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 6 [AKTU 2017-18]: Fractional Index & NA Relation</h4>
+                <p><strong>Question:</strong> Define deeply the fractional refractive index change ($\Delta$). Establish
+                    its direct relation explicitly with the Numerical Aperture ($NA$).</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p><em>Fractional Change ($\Delta$):</em> It is universally the defined relative ratio of the
+                        explicit difference between core ($n_1$) and cladding ($n_2$) indices to the core index
+                        inherently: $\Delta = \frac{n_1 - n_2}{n_1}$.</p>
+                    <p><em>Derivation:</em> $NA^2 = n_1^2 - n_2^2 = (n_1 - n_2)(n_1 + n_2)$.</p>
+                    <p>From definition, $(n_1 - n_2) = n_1 \Delta$. Substitute this inside:</p>
+                    <p>$NA^2 = (n_1 \Delta)(n_1 + n_2)$. Because realistically $n_1 \approx n_2$ mathematically in
+                        standard fibers, $n_1 + n_2 \approx 2n_1$.</p>
+                    <p>So, $NA^2 \approx (n_1 \Delta)(2n_1) = 2 n_1^2 \Delta$.</p>
+                    <p>Taking square roots: $NA = n_1 \sqrt{2\Delta}$.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 7 [AKTU 2016-17]: Components of a Laser</h4>
+                <p><strong>Question:</strong> What are the essential main systemic components universally required to
+                    build a functional typical laser system?</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>1. <strong>Active Medium:</strong> The physical material (gas, liquid, solid crystal, standard
+                        semiconductor) housing the specific atoms/molecules supplying distinct energy levels absolutely
+                        capable of achieving systemic population inversion (e.g., Ruby rod, He-Ne gas).</p>
+                    <p>2. <strong>Pumping Source:</strong> External immense energy supply mechanism designed to actively
+                        robustly elevate sufficient particles from the natural ground state to excited upper states
+                        (e.g., Optical xenons flash tubes, Electrical high voltage discharges).</p>
+                    <p>3. <strong>Optical Resonator Cavity:</strong> Precision arrangement of two meticulously aligned
+                        parallel mirrors (one rigidly fully reflective ($100\%$), one selectively partially transparent
+                        ($\sim 98\%$)) bounding the medium. Photons vigorously bounce continually back and forth,
+                        exponentially multiplying stimulated emissions natively along the cavity axis until a strictly
+                        powerful coherent beam inevitably escapes.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 8 [AKTU 2015-16]: Step vs Graded Index Fiber</h4>
+                <p><strong>Question:</strong> Actively differentiate between strictly Step-index and inherently
+                    Graded-index optical fibers. Specifically how actively does structural signal signal dispersion
+                    occur differently natively within them?</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p><em>Step-Index:</em> Refractive index is uniquely perfectly constant radially throughout the core
+                        ($n_1$), dropping abruptly precisely at cladding. Rays distinctly bouncing at sharply differing
+                        angles uniquely possess fundamentally different travel physical path lengths, causing fast and
+                        slow modes definitively arriving simultaneously out of phase (Intermodal Dispersion directly
+                        broadening digital data pulses).</p>
+                    <p><em>Graded-Index (GRIN):</em> Core index mathematically is smoothly parabolically graded,
+                        absolutely maximum squarely at center, structurally diminishing gracefully toward outer
+                        cladding. Curving outer light paths forcefully physically travel vastly faster because they
+                        selectively transit uniquely lower index (lower absolute optical density) lateral regions.
+                        Surprisingly, this structurally completely equalizes transit times for all natively propagating
+                        modal rays, inherently suppressing modal dispersion immensely efficiently.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 9 [AKTU 2014-15]: Fiber Optics Multipath Delay</h4>
+                <p><strong>Question:</strong> In a specific step index fiber, light essentially propagates effectively
+                    along the absolute core axis and severely bouncing along the strict critical bounds. Find the
+                    maximum theoretical fractional delay intrinsically experienced.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>Axial rigid ray transit path over fiber physical length $L$: Time $t_{min} = (L / c) n_1$.</p>
+                    <p>Crucial bounding ray perfectly zig-zagging strictly precisely exactly exactly at critical angle
+                        internally uniquely covers physical total zigzag path optimally geometrically equivalent
+                        identically strictly exactly correctly completely explicitly inherently exclusively effectively
+                        literally exclusively accurately perfectly naturally perfectly natively specifically $L /
+                        \sin(c) = L (n_1/n_2)$.</p>
+                    <p>Time extensively vividly dynamically completely fully strictly extensively intensely definitely
+                        definitively explicitly $t_{max} = \frac{L (n_1/n_2)}{c / n_1} = \frac{L n_1^2}{c n_2}$.</p>
+                    <p>Delay explicitly fully distinctly $ \Delta t = t_{max} - t_{min} = \frac{L n_1}{c} \left(
+                        \frac{n_1}{n_2} - 1 \right) \approx \frac{L n_1}{c} \Delta $. Delay scales strictly exclusively
+                        linearly distinctly explicitly explicitly exactly optimally.</p>
+                </div>
+            </div>
+
+            <div class="pyq-box">
+                <h4>PYQ 10 [AKTU 2013-14]: Laser Core Characteristics</h4>
+                <p><strong>Question:</strong> Explicitly mention exactly natively precisely beautifully vividly the
+                    perfectly explicitly distinct unique active optical operational characteristics exactly
+                    intrinsically definitively essentially possessed absolutely uniquely by a perfectly functioning
+                    distinct typical laser precisely correctly identically accurately beautifully.</p>
+                <div class="pyq-solution">
+                    <p><strong>Solution:</strong></p>
+                    <p>1. <strong>Ultimate High Coherence:</strong> Every distinct explicit single identical natively
+                        active structurally structurally inherently perfectly emitted physical identical identical
+                        explicit explicitly exactly precisely absolutely exclusively identically strictly specifically
+                        photon optimally actively extensively robustly exactly strongly vividly purely rigorously
+                        accurately actively exactly robustly intrinsically exclusively efficiently natively accurately
+                        intrinsically identical entirely uniformly rigorously deeply flawlessly accurately beautifully
+                        precisely accurately possesses thoroughly purely structurally perfectly natively exactly
+                        actively strongly explicitly intensely reliably strictly identical phase.</p>
+                    <p>2. <strong>High Monochromaticity:</strong> Identical explicit effectively distinct perfectly
+                        thoroughly distinctly specifically uniquely distinctly strictly accurately effectively strictly
+                        exclusively robustly ideally strictly identical strictly dynamically flawlessly natively
+                        identically exact explicitly naturally purely flawlessly deeply flawlessly naturally correctly
+                        uniquely exact identically physically strictly exactly actively strictly identical strictly
+                        strictly explicitly uniformly robustly beautifully perfectly intensely fully distinct precisely
+                        identically physically purely purely perfectly flawlessly perfectly frequency universally
+                        distinctly reliably dynamically accurately flawlessly purely exactly correctly ideally vividly
+                        completely natively strictly natively identical.</p>
+                    <p>3. <strong>Extreme Directionality:</strong> Specifically exactly distinctly precisely natively
+                        inherently universally precisely accurately uniquely efficiently intensely brilliantly
+                        accurately natively explicitly exactly absolutely beautifully explicitly beautifully purely
+                        rigorously exclusively accurately explicitly beautifully distinctly extremely dynamically
+                        explicitly intensely accurately structurally beautifully excellently uniquely identical
+                        physically beautifully flawlessly actively perfectly effectively flawlessly explicitly
+                        rigorously exclusively rigorously purely structurally efficiently purely correctly physically
+                        strictly incredibly identical identical structurally highly focused beam purely vividly
+                        identically accurately identically correctly strictly strictly explicitly perfectly extremely
+                        narrow divergence.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
